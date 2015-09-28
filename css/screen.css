@@ -144,10 +144,12 @@ a { text-decoration: none; }
 .plans__info li i.is-sale { background: url('../img/icons-sedeb1c88ab.png') 0 -20120px no-repeat; width: 200px; height: 201px; }
 .plans__info li span { display: block; font-size: 15px; color: white; line-height: 1.2; }
 
+.slick-slide.slick-active .partner__center { -moz-transition: opacity 0.4s ease 0.4s; -o-transition: opacity 0.4s ease 0.4s; -webkit-transition: opacity 0.4s ease; -webkit-transition-delay: 0.4s; transition: opacity 0.4s ease 0.4s; opacity: 1; }
+
 .partner__inner { display: block; height: 170px; position: relative; max-width: 235px; overflow: hidden; }
 .partner__inner:hover img { -webkit-transform: scale(1.2) rotate(3deg); -moz-transform: scale(1.2) rotate(3deg); -ms-transform: scale(1.2) rotate(3deg); -o-transform: scale(1.2) rotate(3deg); transform: scale(1.2) rotate(3deg); }
 .partner__inner img { position: absolute; top: 0; left: 0; min-width: 100%; min-height: 100%; -moz-transition: -moz-transform 0.2s ease-out; -o-transition: -o-transform 0.2s ease-out; -webkit-transition: -webkit-transform 0.2s ease-out; transition: transform 0.2s ease-out; will-change: transform; }
-.partner__center { position: absolute; z-index: 2; top: 0; left: 0; bottom: 0; right: 0; }
+.partner__center { position: absolute; z-index: 2; top: 0; left: 0; bottom: 0; right: 0; opacity: 0; will-change: opacity; }
 .partner__center i { display: inline-block; }
 .partner__center i.is-dutti { background: url('../img/icons-sedeb1c88ab.png') 0 -6871px no-repeat; width: 235px; height: 170px; }
 .partner__center i.is-stradivarius { background: url('../img/icons-sedeb1c88ab.png') 0 -25043px no-repeat; width: 235px; height: 170px; }

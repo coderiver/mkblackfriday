@@ -160,6 +160,11 @@
 				font-size: 15px
 				color: #fff 
 				line-height: 1.2
+
+.slick-slide.slick-active 
+	.partner__center
+		+transition(opacity 0.4s ease 0.4s)
+		opacity: 1
 				
 .partner
 	&__inner
@@ -190,6 +195,8 @@
 		left: 0
 		bottom: 0
 		right: 0
+		opacity: 0
+		will-change: opacity
 		i
 			display: inline-block
 			&.is-dutti
