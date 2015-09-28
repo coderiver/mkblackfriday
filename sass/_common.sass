@@ -47,11 +47,75 @@
 // p
 // 	+jpg(bla)
 
+//fonts
++font("OpenSans Light", opensans-light)
++font("OpenSans Regular", opensans-regular)
++font("OpenSans Semibold", opensans-semibold)
++font("OpenSans Bold", opensans-bold)
++font("OpenSans ExtraBold", opensans-extrabold)
+
++font("BebasNeue Bold", bebasneue_bold)
+
+=light
+	font-family: "OpenSans Light", Arial, sans-serif
+=reg
+	font-family: "OpenSans Regular", Arial, sans-serif
+=semi
+	font-family: "OpenSans Semibold", Arial, sans-serif
+=bold
+	font-family: "OpenSans Bold", Arial, sans-serif
+=ex
+	font-family: "OpenSans ExtraBold", Arial, sans-serif
+	
+=bb
+	font-family: "BebasNeue Bold", Arial, sans-serif 
+
+//reset
 
 body
-	font-family: Arial, sans-serif
-	font-size: 12px
+	+reg
+	font-size: 18px
 	line-height: 1.4
+	background: url(../img/bg.jpg) center center
 
+h1, h2, h3, h4, h5, h6, b, strong, em, i, td, th
+	font-style: normal
+	font-weight: normal
 
-// common blocks
+a
+	text-decoration: none
+	
+.input, .textarea
+	background-color: #fff
+	border-radius: 2px
+	font-size: 13px
+	+placeholder-color(#99a3a8)
+	padding: 11px 13px 11px
+	width: 100%
+	+reg
+
+.textarea
+	border: none
+	resize: none
+	height: 80px
+	display: block
+	
+.btn
+	font-size: 13px
+	text-transform: uppercase
+	border-radius: 2px 
+	padding: 13px 10px 12px 
+	+transition(all 0.25s)
+	background-color: #fff
+	color: #fd3802
+	&:hover
+		background-color: lighten(#fff, 10%)
+	&:active
+		background-color: darken(#fff, 10%)
+	&_orange
+		background-color: #fd3802
+		color: #fff
+		&:hover
+			background-color: lighten(#fd3802, 10%)
+		&:active
+			background-color: darken(#fd3802, 10%)

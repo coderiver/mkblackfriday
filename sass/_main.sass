@@ -1,1 +1,936 @@
-// Normally mainpage styles
+.promo
+	padding: 60px 0 0 
+	&__inner
+		max-width: 650px
+		margin: 0 auto
+		padding: 0 15px
+		text-align: center
+	&__title
+		font-size: 39px
+		+semi
+		color: #fff
+		line-height: 1
+		margin-bottom: 25px
+		span
+			color: #fd3802
+	p
+		font-size: 14px
+		color: #fff
+		margin-bottom: 22px
+
+.share
+	padding: 18px 30px 18px 18px
+	background: rgba(#0a0a0a, 0.5)
+	border-radius: 10px
+	+clr
+	&__social
+		float: left
+		font-size: 0
+	&__form
+		overflow: hidden
+		position: relative
+		text-align: left
+		margin: 12px 0   
+		form
+			position: relative
+			padding: 0 130px 0 0
+	&__label
+		display: inline-block
+		vertical-align: middle
+		font-size: 13px
+		color: #fff 
+		padding: 0 28px 
+	.btn
+		position: absolute
+		top: 0
+		right: 0
+		width: 130px
+		border-radius: 0 2px 2px 0
+	.input
+		border-radius: 2px 0 0 2px
+
+.social
+	font-size: 0
+	width: 64px
+	display: inline-block
+	vertical-align: middle
+	li
+		display: inline-block
+		vertical-align: top
+		padding: 1px 
+		a
+			display: inline-block
+			&.is-mail
+				+s(mail)
+			&.is-fb
+				+s(fb)
+			&.is-gp
+				+s(gp)
+			&.is-vk
+				+s(vk)
+
+.header
+	&__inner
+		background-color: black
+		&.is-fixed
+			position: fixed
+			top: 0
+			left: 0
+			right: 0
+			z-index: 500
+
+.nav
+	font-size: 0
+	text-align: center	
+	li
+		display: inline-block
+		vertical-align: top
+		padding: 26px 19px 27px
+	a
+		font-size: 27px
+		color: #fff 
+		padding: 9px 7px
+		position: relative
+		display: block
+		line-height: 1.1
+		+transition(all 0.25s)
+		&:hover
+			color: #fd3802 
+		&.is-active
+			color: #fff 
+			&:before
+				width: 100%
+		&:before
+			content: "" 
+			position: absolute
+			bottom: 0
+			left: 0
+			height: 5px
+			background-color: #fd3802
+			border-radius: 2px
+	
+.title
+	text-align: center
+	padding: 46px 0 70px 
+	span
+		display: inline-block
+		position: relative
+		font-size: 45px
+		+bold
+		color: #fff
+		padding: 0 110px
+		line-height: 1
+		&:before, &:after
+			content: "" 
+			position: absolute
+			top: 22px
+			height: 9px
+			width: 96px
+			border-top: 4px solid #fd3802	
+			border-bottom: 2px solid #fd3802	
+		&:before
+			left: 0
+		&:after
+			right: 0
+
+.plans
+	background-color: #181818
+	padding: 0 0 70px 
+	&__info
+		text-align: center
+		max-width: 1080px
+		margin: 0 auto 
+		font-size: 0
+		li
+			padding: 0 80px
+			width: 33.33% 
+			display: inline-block
+			vertical-align: top
+			i
+				display: inline-block
+				margin-bottom: 33px
+				&.is-btn
+					+s(plans-btn)
+				&.is-site
+					+s(plans-site)
+				&.is-sale
+					+s(plans-sale)
+			span
+				display: block
+				font-size: 15px
+				color: #fff 
+				line-height: 1.2
+				
+.partner
+	&__inner
+		display: block
+		height: 170px
+		position: relative
+		max-width: 235px
+		overflow: hidden
+		&:hover
+			img
+				-webkit-transform: scale(1.2) rotate(3deg) 
+				-moz-transform: scale(1.2) rotate(3deg) 
+				-ms-transform: scale(1.2) rotate(3deg) 
+				-o-transform: scale(1.2) rotate(3deg) 
+				transform: scale(1.2) rotate(3deg) 
+		img
+			position: absolute
+			top: 0
+			left: 0
+			min-width: 100%
+			min-height: 100%
+			+transition(transform 0.2s ease-out)
+			will-change: transform
+	&__center
+		position: absolute
+		z-index: 2
+		top: 0
+		left: 0
+		bottom: 0
+		right: 0
+		i
+			display: inline-block
+			&.is-dutti
+				+s(dutti)
+			&.is-stradivarius
+				+s(stradivarius)
+			&.is-adidas
+				+s(adidas)
+			&.is-lenne
+				+s(lenne)
+			&.is-zara
+				+s(zara)
+			&.is-oysho
+				+s(oysho)
+			&.is-puma
+				+s(puma)
+			&.is-bershka
+				+s(bershka)
+			&.is-nike
+				+s(nike)
+			&.is-arena
+				+s(arena)
+			&.is-pb
+				+s(pb)
+			&.is-reebok
+				+s(reebok)
+			&.is-secret
+				+s(secret)
+			&.is-ugg
+				+s(ugg)
+			&.is-carlo
+				+s(carlo)
+			&.is-nb
+				+s(nb)
+			&.is-piazza
+				+s(piazza)
+			&.is-chicco
+				+s(chicco)
+			&.is-timberland
+				+s(timberland)
+			&.is-tommy
+				+s(tommy)
+			&.is-abercrombie
+				+s(abercrombie)
+			&.is-sassofono
+				+s(sassofono)
+			&.is-intertop
+				+s(intertop)
+			&.is-walker
+				+s(walker)
+			&.is-loreal
+				+s(loreal)
+			&.is-iren
+				+s(iren)
+			&.is-tan
+				+s(tan)
+			&.is-milavitsa
+				+s(milavitsa)
+			&.is-crocs
+				+s(crocs)
+			&.is-collumbia
+				+s(collumbia)
+			&.is-merrell
+				+s(merrell)
+			&.is-cat
+				+s(cat)
+			&.is-tally
+				+s(tally)
+			&.is-marks
+				+s(marks)
+			&.is-diesel
+				+s(diesel)
+			&.is-lupilu
+				+s(lupilu)
+			&.is-naturino
+				+s(naturino)
+			&.is-blizzarini
+				+s(blizzarini)
+			&.is-liu
+				+s(liu)
+			&.is-emporio
+				+s(emporio)
+			&.is-guess
+				+s(guess)
+			&.is-red
+				+s(red)
+			&.is-giorgio
+				+s(giorgio)
+			&.is-krisstel
+				+s(krisstel)
+			&.is-lb
+				+s(lb)
+			&.is-bgl
+				+s(bgl)
+			&.is-arber
+				+s(arber)
+			&.is-icepeak
+				+s(icepeak)
+			&.is-oodji
+				+s(oodji)
+			&.is-savage
+				+s(savage)
+			&.is-waggon
+				+s(waggon)
+			&.is-plato
+				+s(plato)
+			&.is-blackstone
+				+s(blackstone)
+			&.is-vanzetti
+				+s(vanzetti)
+			&.is-other
+				+s(other)
+			&.is-cos
+				+s(cos)
+			&.is-bulgari
+				+s(bulgari)
+			&.is-versace
+				+s(versace)
+			&.is-levoni
+				+s(levoni)
+			&.is-sauconi
+				+s(sauconi)
+			&.is-rieker
+				+s(rieker)
+			&.is-respect
+				+s(respect)
+			&.is-erke
+				+s(erke)
+			&.is-tamaris
+				+s(tamaris)
+			&.is-miss
+				+s(miss)
+			&.is-madoc
+				+s(madoc)
+			&.is-leather
+				+s(leather)
+			&.is-julia
+				+s(julia)
+			&.is-luminarc
+				+s(luminarc)
+			&.is-berghoff
+				+s(berghoff)
+			&.is-raslov
+				+s(raslov)
+			&.is-valery
+				+s(valery)
+			&.is-jhiva
+				+s(jhiva)
+			&.is-mustang
+				+s(mustang)
+			&.is-primal
+				+s(primal)
+			&.is-princess
+				+s(princess)
+			&.is-jadea
+				+s(jadea)
+			&.is-intimissim
+				+s(intimissim)
+			&.is-vdone
+				+s(vdone)
+			&.is-levis
+				+s(levis)
+			&.is-diva
+				+s(diva)
+			&.is-keddo
+				+s(keddo)
+			&.is-devision
+				+s(devision)
+			&.is-karree
+				+s(karree)
+			&.is-franchi
+				+s(franchi)
+			&.is-polaroid
+				+s(polaroid)
+			&.is-george
+				+s(george)
+			&.is-mtf
+				+s(mtf)
+			&.is-sebastiano
+				+s(sebastiano)
+			&.is-undo
+				+s(undo)
+			&.is-palvira
+				+s(palvira)
+			&.is-promin
+				+s(promin)
+			&.is-missoni
+				+s(missoni)
+			&.is-eze
+				+s(eze)
+			&.is-elmira
+				+s(elmira)
+			&.is-philippe
+				+s(philippe)
+			&.is-kilah
+				+s(kilah)
+			&.is-rina
+				+s(rina)
+			&.is-ruta
+				+s(ruta)
+			&.is-issa
+				+s(issa)
+			&.is-energie
+				+s(energie)
+			&.is-homeline
+				+s(homeline)
+			&.is-chasovnikova
+				+s(chasovnikova)
+			&.is-time
+				+s(time)
+			&.is-timex
+				+s(timex)
+			&.is-eleonora
+				+s(eleonora)
+			&.is-angel
+				+s(angel)
+			&.is-tony
+				+s(tony)
+			&.is-calzedonia
+				+s(calzedonia)
+			&.is-fabio
+				+s(fabio)
+			&.is-florens
+				+s(florens)
+			&.is-fifi
+				+s(fifi)
+			&.is-arizona
+				+s(arizona)
+			&.is-berenis
+				+s(berenis)
+			&.is-gatta
+				+s(gatta)
+			&.is-divers
+				+s(divers)
+			&.is-joseph
+				+s(joseph)
+			&.is-lemon
+				+s(lemon)
+			&.is-levante
+				+s(levante)
+			&.is-prime
+				+s(prime)
+			&.is-cmc
+				+s(cmc)
+			&.is-majaly
+				+s(majaly)
+			&.is-giulia
+				+s(giulia)
+			&.is-broni
+				+s(broni)
+			&.is-delfin
+				+s(delfin)
+			&.is-conte
+				+s(conte)
+			&.is-selio
+				+s(selio)
+			&.is-just
+				+s(just)
+			&.is-redmond
+				+s(redmond)
+			&.is-acer
+				+s(acer)
+			&.is-ample
+				+s(ample)
+			&.is-marmot
+				+s(marmot)
+			&.is-kenwood
+				+s(kenwood)
+			&.is-philips
+				+s(philips)
+			&.is-windrose
+				+s(windrose)
+			&.is-umbro
+				+s(umbro)
+			&.is-braun
+				+s(braun)
+			&.is-nikon
+				+s(nikon)
+			&.is-craft
+				+s(craft)
+			&.is-speedo
+				+s(speedo)
+			&.is-panasonic
+				+s(panasonic)
+			&.is-elpaso
+				+s(elpaso)
+			&.is-face
+				+s(face)
+			&.is-alian
+				+s(alian)
+			&.is-moda
+				+s(moda)
+			&.is-svetski
+				+s(svetski)
+			&.is-tempish
+				+s(tempish)
+			&.is-salomon
+				+s(salomon)
+			&.is-virginia
+				+s(virginia)
+			&.is-trixie
+				+s(trixie)
+			&.is-diadora
+				+s(diadora)
+			&.is-sperry
+				+s(sperry)
+			&.is-premier
+				+s(premier)
+			&.is-gimborn
+				+s(gimborn)
+			&.is-caprice
+				+s(caprice)
+			&.is-vans
+				+s(vans)
+			&.is-alba
+				+s(alba)
+			&.is-petfusion
+				+s(petfusion)
+			&.is-converse
+				+s(converse)
+			&.is-sweden
+				+s(sweden)
+
+.brends
+	.inner
+		padding: 0 100px 100px
+			
+.slider
+	max-width: 940px
+	margin: 0 auto 
+	.slick-prev, .slick-next
+		margin: 0
+		top: 0
+		bottom: 0
+		height: auto
+		width: 100px
+		+transition(all 0.25s)
+		&:hover			
+			background: rgba(#000, 0.22)
+		&:active
+			background: rgba(#000, 0.4)
+			&:before
+				top: 1px
+		&:before
+			content: "" 
+			position: relative
+	.slick-prev
+		left: auto
+		right: 100%
+		&:before
+			+svg(arr-prev, 20, 37)
+	.slick-next
+		right: auto
+		left: 100%
+		&:before
+			+svg(arr-next, 20, 37)
+	.slick-dots
+		bottom: auto
+		top: 100%
+		font-size: 0
+		margin: 45px 0 0 
+		button
+			width: 10px
+			height: 10px
+			background-color: white
+			opacity: 0.25
+			+box-shadow(none)
+		li
+			padding: 0
+			margin: 0 5px  
+			&.slick-active
+				button
+					opacity: 1
+					background-color: #ff3500
+					
+
+//clock
+.flip-clock-wrapper 
+	display: inline-block
+	width: auto
+	margin: 0
+	ul 
+		width: 40px
+		height: 57px
+		margin: 0 5px 
+		li 
+			line-height: 57px
+			a 
+				overflow: hidden
+				div 
+					div.inn
+						font-size: 50px
+				div.up
+					&:after
+						top: 27px
+.flip-clock-divider
+	width: 20px
+	height: 57px
+	.top, .bottom
+		display: none	
+	.flip-clock-label
+		font-size: 14px
+		+reg
+		color: #fff
+		top: 100%
+		left: 100%
+		right: auto
+		width: 90px
+		text-align: center
+		text-transform: capitalize
+		margin: 5px 
+	&:first-child
+		.flip-clock-label
+			left: 0					
+
+.m-counter
+	color: #fff
+	padding: 50px 0 30px 
+	&__title, &__text
+		display: block
+	&__text
+		font-size: 19px
+		margin-bottom: 10px
+	&__timer
+		min-height: 110px 
+		
+.provider
+	color: #fff
+	background-color: #151617
+	text-align: center 
+	padding: 0 0 60px 
+	&__inner
+		max-width: 940px
+		margin: 0 auto 
+	p
+		+light
+	&__block
+		padding: 35px 0 0 
+		+clr
+	.blockquote
+		margin: 70px 0 0 
+
+.form
+	float: right
+	max-width: 460px
+	width: 100%
+	background-color: #fd3802
+	border-radius: 10px
+	padding: 30px 60px 40px
+	+clr
+	&__btn
+		padding: 10px 0 0
+		float: right
+		width: 220px
+		.btn
+			width: 140px
+	&__title
+		color: #fff
+		+bold
+		font-size: 18px
+		text-transform: uppercase
+		padding: 0 0 25px 
+	
+.field
+	text-align: left
+	+clr
+	padding: 0 0 10px 
+	label
+		display: block
+		overflow: hidden
+	span
+		float: left
+		width: 120px
+		font-size: 13px
+		padding: 11px 0 11px 
+		
+
+.blockquote
+	font-size: 27px
+	line-height: 35px
+	+light
+	color: #fff
+	max-width: 360px
+	width: 100%
+	float: left
+	position: relative
+	text-align: left
+	padding: 0 0 0 40px 
+	&:before
+		content: "" 
+		position: absolute
+		top: 7px
+		bottom: 7px
+		left: 0
+		border-left: 2px solid #fd3802
+	span
+		display: block
+		
+.instruction
+	overflow: hidden
+	padding: 0 0 60px 
+	
+.steps
+	max-width: 965px
+	height: 2090px
+	margin: 0 auto
+	padding: 580px 10px 0 
+	background: url(../img/instruction-bg.jpg) no-repeat top center 
+	position: relative
+	&:before, &:after
+		content: ""
+		position: absolute
+		bottom: 100%
+		+svg(pin, 81, 220)
+		margin-bottom: -30px
+	&:before
+		left: 90px
+	&:after
+		right: 90px
+		
+.step
+	background-color: #fc0
+	border-radius: 20px
+	width: 220px
+	color: #00254f
+	text-align: center
+	padding: 24px 20px 25px 
+	&.is-left
+		float: left
+		clear: left
+	&.is-right
+		float: right
+		clear: right
+	&.is-two
+		margin-top: 200px
+	&.is-three
+		margin-top: 60px
+	&.is-four
+		margin-top: 110px
+	&.is-five
+		margin-top: 60px
+	&.is-six
+		margin-top: 100px
+	&.is-seven
+		margin-top: 100px
+	&__title
+		display: block
+		font-size: 30px
+		line-height: 1
+		+bold
+		margin-bottom: 18px
+		span
+			display: inline-block
+			position: relative
+			padding: 0 13px 
+			&:before, &:after
+				content: "" 
+				position: absolute
+				top: 10px
+				border-top: 4px solid #fd3802
+				border-bottom: 2px solid #fd3802
+				width: 30px
+				height: 9px
+			&:before
+				right: 100%
+			&:after
+				left: 100%
+	small, p
+		line-height: 1.2
+	small
+		font-size: 15px
+		color: #eb4805
+		text-transform: uppercase
+		position: relative
+		display: inline-block
+		+bold
+		margin-bottom: 17px
+		&.is-main
+			padding: 0 27px 
+			&:before
+				content: ""
+				position: absolute
+				top: 50%
+				left: 0
+				+s(hand-main)
+				margin-top: -19px
+	p
+		font-size: 15px
+		
+.info
+	background-color: #151617
+	color: #fff 
+	padding: 0 0 60px 
+	&__inner
+		max-width: 940px
+		margin: 0 auto 
+	.share
+		max-width: 620px
+		margin: 0 auto 
+
+.text
+	padding: 0 0 15px 
+	&__section
+		padding: 0 0 20px 
+	h4
+		font-size: 24px
+		+bold
+	h4, p
+		line-height: 1.5
+		margin-bottom: 25px
+
+.main-social
+	position: fixed
+	top: 50%
+	left: 20px
+	margin-top: -90px
+	z-index: 300
+	width: 60px
+	li
+		padding: 1px 0 
+	a
+		display: block
+		width: 60px
+		height: 58px
+		position: relative
+		background: #000 
+		&.is-fb
+			border-radius: 5px 5px 0 0
+			&:before
+				+s(m-fb)
+				margin: -12px 0 0 -6px
+		&.is-vk
+			&:before
+				+s(m-vk)
+				margin: -11px 0 0 -15px
+		&.is-od
+			border-radius: 0 0 5px 5px
+			&:before
+				+s(m-od)
+				margin: -12px 0 0 -7px
+		&:before
+			position: absolute
+			top: 50%
+			left: 50%
+			content: "" 
+		
+.main-share
+	width: 220px
+	padding: 20px
+	background: rgba(#000, 0.5)  
+	text-align: center
+	color: #fff
+	border-radius: 10px
+	position: fixed
+	top: 50%
+	right: 20px
+	margin-top: -150px
+	z-index: 300
+	p
+		font-size: 13px
+		line-height: 1.2
+		margin-bottom: 30px
+	.share
+		padding: 0 
+		background: none
+		&__social
+			float: none
+			text-align: center
+			padding: 0 0 20px 
+		&__form
+			margin: 0
+			form
+				padding: 0
+			.btn
+				position: relative
+				width: 100%
+			.btn, .input
+				border-radius: 2px
+			.input
+				margin-bottom: 10px
+	.social
+		width: 100%
+		margin-bottom: 10px
+		li
+			margin: 0 5px 
+			
+.sticker
+	margin: 0 auto 25px
+	width: 477px
+	height: 200px
+	background: url(../img/sticker-bg.png) no-repeat center center
+	-webkit-background-size: contain 
+	-o-background-size: contain 
+	background-size: contain 
+	position: relative
+	+bb
+	color: #fff 
+	line-height: 1
+	+user-select(none)
+	+clr
+	&:before
+		content: "" 
+		position: absolute
+		top: 50%
+		left: 48px
+		margin-top: -11px
+		width: 21px
+		height: 21px
+		background: #fff
+		border-radius: 50% 
+	&__inner
+		display: table
+		width: 100%
+	&__text, &__info
+		display: table-cell
+		vertical-align: top
+	&__text
+		font-size: 90px
+		text-transform: uppercase
+		line-height: 0.9
+		padding: 20px 0 18px 110px
+		width: 320px
+	&__info
+		text-align: center
+		padding: 11px 0  
+		position: relative
+		&:before
+			position: absolute
+			top: 25px
+			bottom: 30px
+			left: 0
+			width: 4px
+			background: #fff 
+			content: "" 
+		span, small, time
+			display: block
+		span
+			font-size: 100px
+			text-transform: uppercase
+			line-height: 0.9
+		small
+			font-size: 35px
+		time
+			font-size: 40px
