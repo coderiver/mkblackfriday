@@ -95,11 +95,16 @@ a { text-decoration: none; }
 .slick-dots button { display: block; width: 6px; height: 6px; background: white; -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25); -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25); box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25); cursor: pointer; font: 0/0 a; text-shadow: none; color: transparent; border-radius: 50%; }
 .slick-dots button:hover { box-shadow: none; }
 
-.promo { padding: 60px 0 0; }
+.video { position: absolute; top: 0; left: 0; right: 0; bottom: 0; }
+.video:before { position: absolute; top: 0; left: 0; bottom: 0; right: 0; background: rgba(0, 0, 0, 0.7); content: ""; z-index: 1; }
+.video video { position: absolute; right: 0; bottom: 0; min-width: 100%; min-height: 100%; width: auto; height: auto; }
+
+.promo { padding: 60px 0 0; position: relative; }
 .promo__inner { max-width: 650px; margin: 0 auto; padding: 0 15px; text-align: center; }
 .promo__title { font-size: 39px; font-family: "OpenSans Semibold", Arial, sans-serif; color: white; line-height: 1; margin-bottom: 25px; }
 .promo__title span { color: #fd3802; }
 .promo p { font-size: 14px; color: white; margin-bottom: 22px; }
+.promo .inner { position: relative; z-index: 10; }
 
 .share { padding: 18px 30px 18px 18px; background: rgba(10, 10, 10, 0.5); border-radius: 10px; *zoom: 1; }
 .share:after { content: " "; display: table; clear: both; }

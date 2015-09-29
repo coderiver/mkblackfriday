@@ -1,5 +1,30 @@
+.video
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	&:before
+		position: absolute
+		top: 0
+		left: 0
+		bottom: 0
+		right: 0
+		background: rgba(#000, 0.7)
+		content: "" 
+		z-index: 1 
+	video
+		position: absolute
+		right: 0
+		bottom: 0
+		min-width: 100%
+		min-height: 100%
+		width: auto
+		height: auto
+
 .promo
 	padding: 60px 0 0 
+	position: relative
 	&__inner
 		max-width: 650px
 		margin: 0 auto
@@ -17,6 +42,9 @@
 		font-size: 14px
 		color: #fff
 		margin-bottom: 22px
+	.inner
+		position: relative
+		z-index: 10
 
 .share
 	padding: 18px 30px 18px 18px
