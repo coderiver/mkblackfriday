@@ -4,6 +4,8 @@
 	left: 0
 	right: 0
 	bottom: 0
+	+r2
+		display: none
 	&:before
 		position: absolute
 		top: 0
@@ -25,6 +27,13 @@
 .promo
 	padding: 60px 0 0 
 	position: relative
+	+r1
+		padding: 80px 0 0 
+	+r2
+		background: url(../img/gradient.png) no-repeat top center #000000
+		-webkit-background-size: cover 
+		-o-background-size: cover 
+		background-size: cover 
 	&__inner
 		max-width: 650px
 		margin: 0 auto
@@ -36,12 +45,24 @@
 		color: #fff
 		line-height: 1
 		margin-bottom: 25px
+		+r1
+			font-size: 38px
+			margin-bottom: 120px
+		+r2
+			font-size: 18px
+			margin-bottom: 34px
 		span
 			color: #fd3802
 	p
 		font-size: 14px
 		color: #fff
 		margin-bottom: 22px
+		+r1
+			margin-bottom: 14px
+		+r2
+			font-size: 11px
+			max-width: 250px
+			margin: 0 auto 8px 
 	.inner
 		position: relative
 		z-index: 10
@@ -51,69 +72,172 @@
 	background: rgba(#0a0a0a, 0.5)
 	border-radius: 10px
 	+clr
+	position: relative
+	+r1
+		background: rgba(#272626, 0.8)
+	+r2
+		max-width: 320px
+		margin: 0 auto
+		padding: 15px 30px 34px 
 	&__social
 		float: left
 		font-size: 0
+		+r2
+			position: absolute
+			left: 0
+			right: 0
+			text-align: center
+			bottom: 10px
 	&__form
 		overflow: hidden
 		position: relative
 		text-align: left
-		margin: 12px 0   
+		margin: 12px 0 
+		+r2
+			margin: 0  
 		form
 			position: relative
 			padding: 0 130px 0 0
+			+r2
+				padding: 0 70px 0 0 
 	&__label
 		display: inline-block
 		vertical-align: middle
 		font-size: 13px
 		color: #fff 
 		padding: 0 28px 
+		+r2
+			font-size: 8px
+			padding: 0 6px 
+		&.mob-none
+			+r2
+				display: none
+		&.mob-visible
+			display: none
+			+r2
+				display: inline-block
 	.btn
 		position: absolute
 		top: 0
 		right: 0
 		width: 130px
 		border-radius: 0 2px 2px 0
+		+r2
+			width: 70px
 	.input
 		border-radius: 2px 0 0 2px
+
+.share-text
+	font-size: 12px
+	text-align: center
+	margin: 0 0 10px 
+	display: none
+	+r2
+		display: block
+	&:before
+		content: "" 
+		height: 5px
+		border-top: 2px solid #fd3802
+		border-bottom: 1px solid #fd3802
+		display: block
+		width: 197px
+		margin: 0 auto 18px 
 
 .social
 	font-size: 0
 	width: 64px
 	display: inline-block
 	vertical-align: middle
+	+r2
+		width: auto
 	li
 		display: inline-block
 		vertical-align: top
 		padding: 1px 
+		+r2
+			padding: 0 6px 
 		a
 			display: inline-block
 			&.is-mail
 				+s(mail)
+				+r2
+					width: 18px
+					height: 18px
+					background: url(../img/icons/mail.png) no-repeat
+					+cover
 			&.is-fb
 				+s(fb)
+				+r2
+					width: 18px
+					height: 18px
+					background: url(../img/icons/fb.png) no-repeat
+					+cover
 			&.is-gp
 				+s(gp)
+				+r2
+					width: 18px
+					height: 18px
+					background: url(../img/icons/gp.png) no-repeat
+					+cover
 			&.is-vk
 				+s(vk)
+				+r2
+					width: 18px
+					height: 18px
+					background: url(../img/icons/vk.png) no-repeat
+					+cover
 
 .header
+	+r2
+		min-height: 0 !important 
 	&__inner
 		background-color: black
+		position: relative
+		+r2
+			z-index: 500 
+			border: 1px solid #242323
+			position: fixed
+			top: 0
+			left: 0
+			right: 0	
+			height: 40px 		
 		&.is-fixed
 			position: fixed
 			top: 0
 			left: 0
 			right: 0
 			z-index: 500
+			.main-social
+				visibility: visible
+				opacity: 1
 
 .nav
 	font-size: 0
 	text-align: center	
+	+r2
+		position: absolute
+		top: 100%
+		right: -1px
+		left: -1px
+		margin: 1px 0 0 
+		background: rgba(#000, 0.95)  
+		text-align: left
+		padding: 5px 0 15px
+		+transition(all 0.25s)
+		visibility: hidden
+		opacity: 0
 	li
 		display: inline-block
 		vertical-align: top
 		padding: 26px 19px 27px
+		+r1
+			padding: 30px 18px 29px
+		+r2
+			display: block
+			padding: 0
+		&.mob-none
+			+r2
+				display: none
 	a
 		font-size: 27px
 		color: #fff 
@@ -122,6 +246,14 @@
 		display: block
 		line-height: 1.1
 		+transition(all 0.25s)
+		+r1
+			font-size: 21px
+			padding: 9px 2px 
+		+r2
+			font-size: 14px
+			padding: 0 30px
+			line-height: 25px
+			+semi
 		&:hover
 			color: #fd3802 
 		&.is-active
@@ -136,10 +268,54 @@
 			height: 5px
 			background-color: #fd3802
 			border-radius: 2px
+			+r2
+				display: none
+	&.is-active
+		+r2
+			visibility: visible
+			opacity: 1 
+		a
+			+r2
+				line-height: 31px
+.btn-nav
+	width: 30px
+	height: 22px
+	border-radius: 1px
+	background: #fd3802
+	position: absolute
+	top: 8px
+	right: 19px
+	text-align: center
+	display: none
+	+r2
+		display: block
+	span
+		height: 2px
+		width: 18px
+		background: #fff 
+		position: absolute
+		top: 50%
+		left: 50%
+		margin: -1px 0 0 -9px
+		&:before, &:after
+			content: "" 
+			position: absolute
+			left: 0
+			right: 0
+			height: 2px
+			background: #fff
+		&:before
+			top: -4px
+		&:after
+			bottom: -4px
 	
 .title
 	text-align: center
 	padding: 46px 0 70px 
+	+r1
+		padding: 50px 0 
+	+r2
+		padding: 25px 0 20px 
 	span
 		display: inline-block
 		position: relative
@@ -148,6 +324,11 @@
 		color: #fff
 		padding: 0 110px
 		line-height: 1
+		+r1
+			font-size: 36px
+		+r2
+			font-size: 18px
+			padding: 0 40px 
 		&:before, &:after
 			content: "" 
 			position: absolute
@@ -156,6 +337,14 @@
 			width: 96px
 			border-top: 4px solid #fd3802	
 			border-bottom: 2px solid #fd3802	
+			+r1
+				top: 15px
+			+r2
+				border-top-width: 1px
+				border-bottom-width: 1px
+				height: 3px
+				top: 7px
+				width: 30px
 		&:before
 			left: 0
 		&:after
@@ -164,30 +353,50 @@
 .plans
 	background-color: #181818
 	padding: 0 0 70px 
+	+r2
+		padding: 0  
 	&__info
 		text-align: center
 		max-width: 1080px
 		margin: 0 auto 
 		font-size: 0
+		+r1
+			max-width: 768px
+		+r2
+			max-width: 320px
 		li
-			padding: 0 80px
 			width: 33.33% 
 			display: inline-block
 			vertical-align: top
-			i
-				display: inline-block
-				margin-bottom: 33px
-				&.is-btn
-					+s(plans-btn)
-				&.is-site
-					+s(plans-site)
-				&.is-sale
-					+s(plans-sale)
-			span
-				display: block
-				font-size: 15px
-				color: #fff 
-				line-height: 1.2
+			+r2
+				width: 100%
+				padding: 0 10px 30px
+	&__img
+		display: inline-block
+		margin-bottom: 33px
+		max-width: 200px
+		width: 100%
+		font-size: 0
+		+r1
+			max-width: 144px
+		+r2
+			max-width: 124px
+			margin: 0 9px 0 0 
+			vertical-align: middle
+		img
+			width: 100%
+	&__text
+		+r2
+			max-width: 167px
+			display: inline-block
+			vertical-align: middle
+		span
+			display: block
+			font-size: 15px
+			color: #fff 
+			line-height: 1.2
+			max-width: 170px
+			margin: 0 auto 
 
 .slick-slide.slick-active 
 	.partner__center
@@ -201,6 +410,9 @@
 		position: relative
 		max-width: 235px
 		overflow: hidden
+		+r2
+			width: 140px
+			height: 100px
 		&:hover
 			img
 				-webkit-transform: scale(1.2) rotate(3deg) 
@@ -227,6 +439,9 @@
 		will-change: opacity
 		i
 			display: inline-block
+			+r2
+				+scale(0.6)
+				margin: -35px 0 0 -47px 
 			&.is-dutti
 				+s(dutti)
 			&.is-stradivarius
@@ -551,10 +766,18 @@
 .brends
 	.inner
 		padding: 0 100px 100px
+		+r1
+			padding: 0 32px 55px 
+		+r2
+			padding: 0 20px 46px 
 			
 .slider
 	max-width: 940px
 	margin: 0 auto 
+	+r1
+		max-width: 705px
+	+r2
+		max-width: 280px
 	.slick-prev, .slick-next
 		margin: 0
 		top: 0
@@ -562,10 +785,29 @@
 		height: auto
 		width: 100px
 		+transition(all 0.25s)
+		z-index: 10 
+		+r1
+			width: 60px
+			height: 60px
+			top: 50%
+			bottom: auto
+			margin-top: -30px
+			background: #fd3207 
+			border-radius: 50%
+			box-shadow: 0 12px 21px rgba(0, 0, 0, 0.78)
+		+r2
+			width: 36px
+			height: 36px
+			margin-top: -18px			
+			box-shadow: 0 8px 17px rgba(0, 0, 0, 0.78)
 		&:hover			
 			background: rgba(#000, 0.22)
+			+r1
+				background: #ff0000
 		&:active
 			background: rgba(#000, 0.4)
+			+r1
+				background: #ff0000
 			&:before
 				top: 1px
 		&:before
@@ -574,27 +816,56 @@
 	.slick-prev
 		left: auto
 		right: 100%
+		+r1
+			right: auto
+			left: -22px
+		+r2
+			left: -14px
 		&:before
 			+svg(arr-prev, 20, 37)
+			+r1
+				+svg(arr-prev, 13, 24)
+				margin: 0 5px 0 0 
+			+r2
+				+svg(arr-prev, 9, 15)
+				margin: 0 2px 0 0 
 	.slick-next
 		right: auto
 		left: 100%
+		+r1
+			left: auto
+			right: -22px
+		+r2
+			right: -14px
 		&:before
 			+svg(arr-next, 20, 37)
+			+r1
+				+svg(arr-next, 13, 24)
+				margin: 0 0 0 5px 
+			+r2
+				+svg(arr-next, 9, 15)
+				margin: 0 0 0 2px 
 	.slick-dots
 		bottom: auto
 		top: 100%
 		font-size: 0
 		margin: 45px 0 0 
+		+r1
+			margin: 22px 0 0 
 		button
 			width: 10px
 			height: 10px
 			background-color: white
 			opacity: 0.25
 			+box-shadow(none)
+			+r2
+				width: 5px
+				height: 5px
 		li
 			padding: 0
 			margin: 0 5px  
+			+r2
+				margin: 2px  
 			&.slick-active
 				button
 					opacity: 1
@@ -610,19 +881,30 @@
 		width: 40px
 		height: 57px
 		margin: 0 5px 
+		+r2
+			width: 26px
+			height: 38px
+			margin: 0 3px 
 		li 
 			line-height: 57px
+			+r2
+				line-height: 38px
 			a 
 				overflow: hidden
 				div 
 					div.inn
 						font-size: 50px
+						+r2
+							font-size: 34px
 				div.up
 					&:after
 						top: 27px
 .flip-clock-divider
 	width: 20px
 	height: 57px
+	+r2
+		width: 6px
+		height: 38px
 	.top, .bottom
 		display: none	
 	.flip-clock-label
@@ -636,6 +918,9 @@
 		text-align: center
 		text-transform: capitalize
 		margin: 5px 
+		+r2
+			font-size: 10px
+			width: 54px 
 	&:first-child
 		.flip-clock-label
 			left: 0					
@@ -643,13 +928,21 @@
 .m-counter
 	color: #fff
 	padding: 50px 0 30px 
+	+r1
+		padding: 110px 0 50px 
+	+r2
+		padding: 30px 0 0 
 	&__title, &__text
 		display: block
 	&__text
 		font-size: 19px
 		margin-bottom: 10px
+		+r2
+			font-size: 11px
 	&__timer
 		min-height: 110px 
+		+r2
+			min-height: 80px 
 		
 .provider
 	color: #fff
@@ -661,11 +954,19 @@
 		margin: 0 auto 
 	p
 		+light
+		+r1
+			display: none
 	&__block
 		padding: 35px 0 0 
 		+clr
+		+r1
+			padding: 0
 	.blockquote
 		margin: 70px 0 0 
+		+r1
+			margin: 0 auto 55px 
+		+r2
+			margin-bottom: 30px
 
 .form
 	float: right
@@ -675,23 +976,38 @@
 	border-radius: 10px
 	padding: 30px 60px 40px
 	+clr
+	+r1
+		float: none
+		margin: 0 auto 
+	+r2
+		padding: 20px 35px 24px
+		max-width: 282px 
 	&__btn
 		padding: 10px 0 0
 		float: right
 		width: 220px
+		+r2
+			padding: 6px 0 0 
 		.btn
 			width: 140px
+			+r2
+				width: 86px
 	&__title
 		color: #fff
 		+bold
 		font-size: 18px
 		text-transform: uppercase
 		padding: 0 0 25px 
+		+r2
+			font-size: 16px
+			padding: 0 0 15px 
 	
 .field
 	text-align: left
 	+clr
 	padding: 0 0 10px 
+	+r2
+		padding: 0 0 6px 
 	label
 		display: block
 		overflow: hidden
@@ -700,6 +1016,10 @@
 		width: 120px
 		font-size: 13px
 		padding: 11px 0 11px 
+		+r2
+			font-size: 10px
+			padding: 4px 0
+			width: 75px 
 		
 
 .blockquote
@@ -713,6 +1033,17 @@
 	position: relative
 	text-align: left
 	padding: 0 0 0 40px 
+	+r1
+		float: none
+		padding: 0 
+		max-width: 600px
+		text-align: center
+		margin: 0 auto
+		font-size: 21px
+		line-height: 1.2
+	+r2
+		font-size: 12px
+		max-width: 280px
 	&:before
 		content: "" 
 		position: absolute
@@ -720,12 +1051,20 @@
 		bottom: 7px
 		left: 0
 		border-left: 2px solid #fd3802
+		+r1
+			display: none
 	span
 		display: block
+		+r2
+			display: inline
 		
 .instruction
 	overflow: hidden
 	padding: 0 0 60px 
+	+r1
+		padding: 0 0 50px 
+	+r2
+		display: none
 	
 .steps
 	max-width: 965px
@@ -734,6 +1073,16 @@
 	padding: 580px 10px 0 
 	background: url(../img/instruction-bg.jpg) no-repeat top center 
 	position: relative
+	+r1
+		padding: 430px 8px 0 
+		width: 710px
+		height: 1545px
+		-webkit-background-size: contain 
+		-o-background-size: contain 
+		background-size: contain 
+		background-color: #fff 
+	+r2
+		display: none
 	&:before, &:after
 		content: ""
 		position: absolute
@@ -742,8 +1091,12 @@
 		margin-bottom: -30px
 	&:before
 		left: 90px
+		+r1
+			left: 55px
 	&:after
 		right: 90px
+		+r1
+			right: 55px
 		
 .step
 	background-color: #fc0
@@ -752,6 +1105,9 @@
 	color: #00254f
 	text-align: center
 	padding: 24px 20px 25px 
+	+r1
+		width: 165px
+		padding: 20px 15px 20px 
 	&.is-left
 		float: left
 		clear: left
@@ -760,26 +1116,43 @@
 		clear: right
 	&.is-two
 		margin-top: 200px
+		+r1
+			margin-top: 150px
 	&.is-three
 		margin-top: 60px
+		+r1
+			margin-top: 45px
 	&.is-four
 		margin-top: 110px
+		+r1
+			margin-top: 85px
 	&.is-five
 		margin-top: 60px
+		+r1
+			margin-top: 45px
 	&.is-six
 		margin-top: 100px
+		+r1
+			margin-top: 75px
 	&.is-seven
 		margin-top: 100px
+		+r1
+			margin-top: 75px
 	&__title
 		display: block
 		font-size: 30px
 		line-height: 1
 		+bold
 		margin-bottom: 18px
+		+r1
+			font-size: 22px 
+			margin-bottom: 13px
 		span
 			display: inline-block
 			position: relative
 			padding: 0 13px 
+			+r1
+				padding: 0 10px 
 			&:before, &:after
 				content: "" 
 				position: absolute
@@ -788,6 +1161,12 @@
 				border-bottom: 2px solid #fd3802
 				width: 30px
 				height: 9px
+				+r1
+					width: 20px
+					border-top-width: 3px
+					border-bottom-width: 1px 
+					height: 7px
+					top: 7px
 			&:before
 				right: 100%
 			&:after
@@ -802,8 +1181,13 @@
 		display: inline-block
 		+bold
 		margin-bottom: 17px
+		+r1
+			font-size: 11px
+			margin-bottom: 12px
 		&.is-main
 			padding: 0 27px 
+			+r1
+				padding: 0 18px 
 			&:before
 				content: ""
 				position: absolute
@@ -811,30 +1195,51 @@
 				left: 0
 				+s(hand-main)
 				margin-top: -19px
+				+r1
+					+s(hand-main-small)
+					margin-top: -15px
 	p
 		font-size: 15px
+		+r1
+			font-size: 11px
 		
 .info
 	background-color: #151617
 	color: #fff 
-	padding: 0 0 60px 
+	padding: 0 32px 60px 
+	+r1
+		background-color: #181818
+	+r2
+		background: #000 
+		padding: 0 32px 30px 
 	&__inner
 		max-width: 940px
 		margin: 0 auto 
 	.share
 		max-width: 620px
 		margin: 0 auto 
+		+r1
+			background-color: rgba(#0a0a0a, 0.8)
+		+r2
+			max-width: 320px
+			background: none
 
 .text
 	padding: 0 0 15px 
 	&__section
 		padding: 0 0 20px 
+		+r2
+			padding: 0 0 10px 
 	h4
 		font-size: 24px
 		+bold
+		+r2
+			font-size: 11px
 	h4, p
 		line-height: 1.5
 		margin-bottom: 25px
+		+r2
+			margin-bottom: 10px
 
 .main-social
 	position: fixed
@@ -843,25 +1248,58 @@
 	margin-top: -90px
 	z-index: 300
 	width: 60px
+	+r1
+		top: 110px
+		margin-top: 0
+		right: 30px
+		left: auto
+		width: 128px
+		font-size: 0
+	+r2
+		position: static
+		visibility: hidden
+		opacity: 0
+		+transition(all 0.25s)
+		padding: 0 0 0 17px 
 	li
 		padding: 1px 0 
+		+r1
+			display: inline-block
+			padding: 0 1px 
+		+r2
+			padding: 9px 3px 8px
 	a
 		display: block
 		width: 60px
 		height: 58px
 		position: relative
 		background: #000 
+		+r1
+			width: 40px
+			height: 42px
 		&.is-fb
 			border-radius: 5px 5px 0 0
+			+r1
+				border-radius: 5px 0 0 5px
+			+r2
+				border-radius: 0
+				+s(fb-mob)
 			&:before
 				+s(m-fb)
 				margin: -12px 0 0 -6px
 		&.is-vk
 			&:before
 				+s(m-vk)
-				margin: -11px 0 0 -15px
+				margin: -9px 0 0 -15px
+			+r2
+				+s(vk-mob)
 		&.is-od
 			border-radius: 0 0 5px 5px
+			+r1
+				border-radius: 0 5px 5px 0
+			+r2
+				border-radius: 0
+				+s(od-mob)
 			&:before
 				+s(m-od)
 				margin: -12px 0 0 -7px
@@ -870,6 +1308,8 @@
 			top: 50%
 			left: 50%
 			content: "" 
+			+r2
+				display: none
 		
 .main-share
 	width: 220px
@@ -883,6 +1323,8 @@
 	right: 20px
 	margin-top: -150px
 	z-index: 300
+	+r1
+		display: none
 	p
 		font-size: 13px
 		line-height: 1.2
@@ -925,6 +1367,14 @@
 	line-height: 1
 	+user-select(none)
 	+clr
+	+r1
+		width: 389px
+		height: 164px
+		margin-bottom: 50px
+	+r2
+		width: 240px
+		height: 101px
+		margin-bottom: 25px
 	&:before
 		content: "" 
 		position: absolute
@@ -935,6 +1385,15 @@
 		height: 21px
 		background: #fff
 		border-radius: 50% 
+		+r1
+			width: 18px
+			height: 18px
+			margin-top: -9px
+		+r2
+			width: 10px
+			height: 10px
+			margin-top: -5px
+			left: 24px
 	&__inner
 		display: table
 		width: 100%
@@ -947,10 +1406,22 @@
 		line-height: 0.9
 		padding: 20px 0 18px 110px
 		width: 320px
+		+r1
+			padding: 20px 0 18px 95px
+			font-size: 68px
+			width: 260px 
+		+r2
+			width: 160px
+			padding: 10px 0 9px 55px
+			font-size: 45px 
 	&__info
 		text-align: center
 		padding: 11px 0  
 		position: relative
+		+r1
+			padding: 15px 0 
+		+r2
+			padding: 5px 0 
 		&:before
 			position: absolute
 			top: 25px
@@ -959,13 +1430,31 @@
 			width: 4px
 			background: #fff 
 			content: "" 
+			+r1
+				bottom: 25px
+			+r2
+				top: 10px
+				bottom: 10px
+				width: 2px
 		span, small, time
 			display: block
 		span
 			font-size: 100px
 			text-transform: uppercase
 			line-height: 0.9
+			+r1
+				font-size: 70px
+			+r2
+				font-size: 50px
 		small
 			font-size: 35px
+			+r1
+				font-size: 26px
+			+r2
+				font-size: 18px
 		time
 			font-size: 40px
+			+r1
+				font-size: 36px
+			+r2
+				font-size: 20px

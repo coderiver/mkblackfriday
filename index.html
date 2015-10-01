@@ -19,8 +19,8 @@
 	<section class="promo js-anchor">
 		<div class="video">
 			<video autoplay loop muted>
-				<!-- <source src="video/RESULT.webm"></source>
-				<source src="video/RESULT.mp4"></source> -->
+				<source src="video/RESULT.webm"></source>
+				<source src="video/RESULT.mp4"></source>
 				<source src="video/RESULT2.ogg"></source>
 			</video>
 		</div>
@@ -40,13 +40,14 @@
 				<p>Такие огромные скидки будут только 3 дня! Нажмите участвовать и мы Вам напомним:)</p>
 				<div class="share">
 					<div class="share__social">
+						<span class="share__label mob-visible">или</span>
 						<ul class="social">
 							<li><a href="#" class="is-mail"></a></li>
 							<li><a href="#" class="is-fb"></a></li>
 							<li><a href="#" class="is-gp"></a></li>
 							<li><a href="#" class="is-vk"></a></li>
 						</ul>						
-						<span class="share__label">или</span>
+						<span class="share__label mob-none">или</span>
 					</div>					
 					<div class="share__form">
 						<form action="">
@@ -66,12 +67,18 @@
 	</section>
 	<header class="header js-fixed-nav">
 		<div class="header__inner js-fixed-nav-in">
-			<nav class="nav">
+			<button class="btn-nav js-nav-btn"><span></span></button>
+			<ul class="main-social">
+				<li><a href="#" class="is-fb"></a></li>
+				<li><a href="#" class="is-vk"></a></li>
+				<li><a href="#" class="is-od"></a></li>
+			</ul>
+			<nav class="nav js-nav">
 				<ul>
 					<li><a href="#" class="js-anchor-link" data-id="plans">План</a></li>
 					<li><a href="#" class="js-anchor-link" data-id="brends">Бренды</a></li>
 					<li><a href="#" class="js-anchor-link" data-id="provider">Поставщикам</a></li>
-					<li><a href="#" class="js-anchor-link" data-id="instruction">Инструкция</a></li>
+					<li class="mob-none"><a href="#" class="js-anchor-link" data-id="instruction">Инструкция</a></li>
 					<li><a href="#" class="js-anchor-link" data-id="info">О проекте</a></li>
 				</ul>
 			</nav>
@@ -82,17 +89,29 @@
 			<div class="title"><span>План</span></div>
 			<ul class="plans__info">
 				<li>
-					<i class="is-btn"></i>
-					<span>Введите свой e-mail и нажмите кнопку участвовать</span>
+					<div class="plans__img">
+						<img src="img/plans-btn.png" alt="">
+					</div>
+					<div class="plans__text">
+						<span>Введите свой e-mail и нажмите кнопку участвовать</span>	
+					</div>
 				</li>
 				<li>
-					<i class="is-site"></i>
-					<span>Заходите 27.11</span>
-					<span>в 00:01 на сайт blackfriday.ua</span>
+					<div class="plans__img">
+						<img src="img/plans-site.png" alt="">
+					</div>
+					<div class="plans__text">
+						<span>Заходите 27.11</span>
+						<span>в 00:01 на сайт blackfriday.ua</span>						
+					</div>
 				</li>
 				<li>
-					<i class="is-sale"></i>
-					<span>Покупайте любимые бренды по скидкам до -90%</span>
+					<div class="plans__img">
+						<img src="img/plans-sale.png" alt="">
+					</div>
+					<div class="plans__text">						
+						<span>Покупайте любимые бренды по скидкам до -90%</span>
+					</div>
 				</li>
 			</ul>
 		</div>
@@ -1264,16 +1283,18 @@
 					<p>Что же касается названия ― Черная пятница ― доподлинно неизвестно, кто и когда его придумал. Самая популярная версия гласит, что черным этот день назвали полицейские Филадельфии, охарактеризовав немыслимые пробки на дорогах и толпы людей на улицах в день «большого шопинга». По другой версии ― черным цветом в бухгалтерских документах выделялась прибыль, которой в Black Friday было предостаточно. Мы же решили придумать для Blackfriday.ua свою: Черная пятница ― это просто черная магия какая-то и сплошное предновогоднее волшебство, ведь скидки просто нереальные!</p>
 				</div>
 			</div>
+			<div class="share-text">Такие огромные скидки будут только 3 дня!<br>Нажмите участвовать и мы Вам напомним:)</div>
 			<div class="share">
 				<div class="share__social">
+					<span class="share__label mob-visible">или</span>
 					<ul class="social">
 						<li><a href="#" class="is-mail"></a></li>
 						<li><a href="#" class="is-fb"></a></li>
 						<li><a href="#" class="is-gp"></a></li>
 						<li><a href="#" class="is-vk"></a></li>
 					</ul>						
-					<span class="share__label">или</span>
-				</div>					
+					<span class="share__label mob-none">или</span>
+				</div>				
 				<div class="share__form">
 					<form action="">
 						<input type="text" class="input" placeholder="Ваша почта">
@@ -1283,12 +1304,6 @@
 			</div>
 		</div>		
 	</section>
-
-	<ul class="main-social">
-		<li><a href="#" class="is-fb"></a></li>
-		<li><a href="#" class="is-vk"></a></li>
-		<li><a href="#" class="is-od"></a></li>
-	</ul>
 
 	<div class="main-share">
 		<p>Такие огромные скидки будут только 3 дня! Нажмите участвовать и мы Вам напомним :)</p>

@@ -20,14 +20,49 @@ head.ready(function() {
 		dots: true,
 		arrows: true,
 		slidesToShow: 4,
-		slidesToScroll: 4
+		slidesToScroll: 4,
+		responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 3
+				}
+			},
+			{
+				breakpoint: 800,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2
+				}
+			},
+		]
 	});
 
+
+	$('.js-nav').each(function() {
+		var nav = $(this),
+			navBtn = $('.js-nav-btn'),
+			navLink = $('.js-nav a');
+		navBtn.click(function() {
+			nav.toggleClass('is-active');
+			return false;
+		});
+		$('body').on('click', function() {
+			nav.removeClass('is-active');			
+		});
+		navLink.on('click', function() {
+			nav.removeClass('is-active');			
+		});
+		nav.on('click', function(event) {
+			event.stopPropagation();
+		});
+	});
 
 	//counter
 
 	var a = new Date(); // Now
-	var b = new Date(2015, 8, 30, 0, 0, 0, 0); // end date
+	var b = new Date(2015, 9, 30, 0, 0, 0, 0); // end date
 	var seconds = Math.round((b-a)/1000); // seconds
 
 	clock = $('.js-clock').FlipClock({
