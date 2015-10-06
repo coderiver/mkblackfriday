@@ -32,7 +32,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 @font-face { font-family: "OpenSans Bold"; src: url("fonts/opensans-bold.eot"); src: url("fonts/opensans-bold.eot?#iefix") format("embedded-opentype"), url("fonts/opensans-bold.woff2") format("woff2"), url("fonts/opensans-bold.woff") format("woff"), url("fonts/opensans-bold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 @font-face { font-family: "OpenSans ExtraBold"; src: url("fonts/opensans-extrabold.eot"); src: url("fonts/opensans-extrabold.eot?#iefix") format("embedded-opentype"), url("fonts/opensans-extrabold.woff2") format("woff2"), url("fonts/opensans-extrabold.woff") format("woff"), url("fonts/opensans-extrabold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 @font-face { font-family: "BebasNeue Bold"; src: url("fonts/bebasneue_bold.eot"); src: url("fonts/bebasneue_bold.eot?#iefix") format("embedded-opentype"), url("fonts/bebasneue_bold.woff2") format("woff2"), url("fonts/bebasneue_bold.woff") format("woff"), url("fonts/bebasneue_bold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
-body { font-family: "OpenSans Regular", Arial, sans-serif; font-size: 18px; line-height: 1.4; background: url(../img/bg.jpg) center center; }
+body { font-family: "OpenSans Regular", Arial, sans-serif; font-size: 18px; line-height: 1.4; }
 @media only screen and (max-width: 800px) { body { font-size: 11px; } }
 
 h1, h2, h3, h4, h5, h6, b, strong, em, i, td, th { font-style: normal; font-weight: normal; }
@@ -99,6 +99,11 @@ a { text-decoration: none; }
 .slick-dots button { display: block; width: 6px; height: 6px; background: white; -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25); -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25); box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25); cursor: pointer; font: 0/0 a; text-shadow: none; color: transparent; border-radius: 50%; }
 .slick-dots button:hover { box-shadow: none; }
 
+.btn-sound { background: none; position: absolute; top: 20px; right: 20px; z-index: 500; }
+.btn-sound.is-active .no-sound { display: none; }
+
+.js-section { background: url(../img/bg.jpg) center 0 repeat fixed; }
+
 .video { position: absolute; top: 0; left: 0; right: 0; bottom: 0; }
 @media only screen and (max-width: 800px) { .video { display: none; } }
 .video:before { position: absolute; top: 0; left: 0; bottom: 0; right: 0; background: rgba(0, 0, 0, 0.7); content: ""; z-index: 1; }
@@ -159,6 +164,8 @@ a { text-decoration: none; }
 @media only screen and (max-width: 800px) { .header__inner { z-index: 500; border: 1px solid #242323; position: fixed; top: 0; left: 0; right: 0; height: 40px; } }
 .header__inner.is-fixed { position: fixed; top: 0; left: 0; right: 0; z-index: 500; }
 .header__inner.is-fixed .main-social { visibility: visible; opacity: 1; }
+.header__inner.is-fixed .main-share { top: 50%; visibility: visible; opacity: 1; }
+.header__inner.is-fixed .main-share.is-hidden { top: 20%; opacity: 0; visibility: hidden; }
 
 .nav { font-size: 0; text-align: center; }
 @media only screen and (max-width: 800px) { .nav { position: absolute; top: 100%; right: -1px; left: -1px; margin: 1px 0 0; background: rgba(0, 0, 0, 0.95); text-align: left; padding: 5px 0 15px; -moz-transition: all 0.25s; -o-transition: all 0.25s; -webkit-transition: all 0.25s; transition: all 0.25s; visibility: hidden; opacity: 0; } }
@@ -215,9 +222,10 @@ a { text-decoration: none; }
 .partner__inner { display: block; height: 170px; position: relative; max-width: 235px; overflow: hidden; }
 @media only screen and (max-width: 800px) { .partner__inner { width: 140px; height: 100px; } }
 .partner__inner:hover img { -webkit-transform: scale(1.2) rotate(3deg); -moz-transform: scale(1.2) rotate(3deg); -ms-transform: scale(1.2) rotate(3deg); -o-transform: scale(1.2) rotate(3deg); transform: scale(1.2) rotate(3deg); }
+.partner__inner:hover .partner__center i { visibility: hidden; opacity: 0; }
 .partner__inner img { position: absolute; top: 0; left: 0; min-width: 100%; min-height: 100%; -moz-transition: -moz-transform 0.2s ease-out; -o-transition: -o-transform 0.2s ease-out; -webkit-transition: -webkit-transform 0.2s ease-out; transition: transform 0.2s ease-out; will-change: transform; }
 .partner__center { position: absolute; z-index: 2; top: 0; left: 0; bottom: 0; right: 0; opacity: 0; will-change: opacity; }
-.partner__center i { display: inline-block; }
+.partner__center i { display: inline-block; -moz-transition: visibility 0.2s, opacity 0.2s; -o-transition: visibility 0.2s, opacity 0.2s; -webkit-transition: visibility 0.2s, opacity 0.2s; transition: visibility 0.2s, opacity 0.2s; }
 @media only screen and (max-width: 800px) { .partner__center i { -ms-transform: scale(0.6); -webkit-transform: scale(0.6); transform: scale(0.6); margin: -35px 0 0 -47px; } }
 .partner__center i.is-dutti { background: url('../img/icons-s0e2697cead.png') 0 -6871px no-repeat; width: 235px; height: 170px; }
 .partner__center i.is-stradivarius { background: url('../img/icons-s0e2697cead.png') 0 -24506px no-repeat; width: 235px; height: 170px; }
@@ -483,7 +491,7 @@ a { text-decoration: none; }
 @media only screen and (max-width: 1024px) { .instruction { padding: 0 0 50px; } }
 @media only screen and (max-width: 800px) { .instruction { display: none; } }
 
-.steps { max-width: 965px; height: 2090px; margin: 0 auto; padding: 580px 10px 0; background: url(../img/instruction-bg.jpg) no-repeat top center; position: relative; }
+.steps { max-width: 965px; height: 2090px; margin: 0 auto; padding: 580px 10px 0; background: url(../img/instruction-bg1.jpg) no-repeat top center; position: relative; }
 @media only screen and (max-width: 1024px) { .steps { padding: 430px 8px 0; width: 710px; height: 1545px; -webkit-background-size: contain; -o-background-size: contain; background-size: contain; background-color: white; } }
 @media only screen and (max-width: 800px) { .steps { display: none; } }
 .steps:before, .steps:after { content: ""; position: absolute; bottom: 100%; background: url("../img/svg/pin.svg") no-repeat 0 0; -moz-background-size: 81px 220px; -o-background-size: 81px 220px; -webkit-background-size: 81px 220px; background-size: 81px 220px; width: 81px; height: 220px; display: inline-block; margin-bottom: -30px; }
@@ -563,7 +571,7 @@ a { text-decoration: none; }
 .main-social a:before { position: absolute; top: 50%; left: 50%; content: ""; }
 @media only screen and (max-width: 800px) { .main-social a:before { display: none; } }
 
-.main-share { width: 220px; padding: 20px; background: rgba(0, 0, 0, 0.5); text-align: center; color: white; border-radius: 10px; position: fixed; top: 50%; right: 20px; margin-top: -150px; z-index: 300; }
+.main-share { width: 220px; padding: 20px; background: rgba(0, 0, 0, 0.5); text-align: center; color: white; border-radius: 10px; position: fixed; top: 20%; right: 20px; margin-top: -150px; z-index: 300; visibility: hidden; opacity: 0; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; transition: all 0.5s ease; }
 @media only screen and (max-width: 1024px) { .main-share { display: none; } }
 .main-share p { font-size: 13px; line-height: 1.2; margin-bottom: 30px; }
 .main-share .share { padding: 0; background: none; }
@@ -576,31 +584,8 @@ a { text-decoration: none; }
 .main-share .social { width: 100%; margin-bottom: 10px; }
 .main-share .social li { margin: 0 5px; }
 
-.sticker { margin: 0 auto 25px; width: 477px; height: 200px; background: url(../img/sticker-bg.png) no-repeat center center; -webkit-background-size: contain; -o-background-size: contain; background-size: contain; position: relative; font-family: "BebasNeue Bold", Arial, sans-serif; color: white; line-height: 1; -moz-user-select: -moz-none; -ms-user-select: none; -webkit-user-select: none; user-select: none; *zoom: 1; }
+.sticker { margin: 0 auto 25px; width: 477px; height: 200px; position: relative; font-family: "BebasNeue Bold", Arial, sans-serif; color: white; line-height: 1; -moz-user-select: -moz-none; -ms-user-select: none; -webkit-user-select: none; user-select: none; *zoom: 1; }
 .sticker:after { content: " "; display: table; clear: both; }
 @media only screen and (max-width: 1024px) { .sticker { width: 389px; height: 164px; margin-bottom: 50px; } }
 @media only screen and (max-width: 800px) { .sticker { width: 240px; height: 101px; margin-bottom: 25px; } }
-.sticker:before { content: ""; position: absolute; top: 50%; left: 48px; margin-top: -11px; width: 21px; height: 21px; background: white; border-radius: 50%; }
-@media only screen and (max-width: 1024px) { .sticker:before { width: 18px; height: 18px; margin-top: -9px; } }
-@media only screen and (max-width: 800px) { .sticker:before { width: 10px; height: 10px; margin-top: -5px; left: 24px; } }
-.sticker__inner { display: table; width: 100%; }
-.sticker__text, .sticker__info { display: table-cell; vertical-align: top; }
-.sticker__text { font-size: 90px; text-transform: uppercase; line-height: 0.9; padding: 20px 0 18px 110px; width: 320px; }
-@media only screen and (max-width: 1024px) { .sticker__text { padding: 20px 0 18px 95px; font-size: 68px; width: 260px; } }
-@media only screen and (max-width: 800px) { .sticker__text { width: 160px; padding: 10px 0 9px 55px; font-size: 45px; } }
-.sticker__info { text-align: center; padding: 11px 0; position: relative; }
-@media only screen and (max-width: 1024px) { .sticker__info { padding: 15px 0; } }
-@media only screen and (max-width: 800px) { .sticker__info { padding: 5px 0; } }
-.sticker__info:before { position: absolute; top: 25px; bottom: 30px; left: 0; width: 4px; background: white; content: ""; }
-@media only screen and (max-width: 1024px) { .sticker__info:before { bottom: 25px; } }
-@media only screen and (max-width: 800px) { .sticker__info:before { top: 10px; bottom: 10px; width: 2px; } }
-.sticker__info span, .sticker__info small, .sticker__info time { display: block; }
-.sticker__info span { font-size: 100px; text-transform: uppercase; line-height: 0.9; }
-@media only screen and (max-width: 1024px) { .sticker__info span { font-size: 70px; } }
-@media only screen and (max-width: 800px) { .sticker__info span { font-size: 50px; } }
-.sticker__info small { font-size: 35px; }
-@media only screen and (max-width: 1024px) { .sticker__info small { font-size: 26px; } }
-@media only screen and (max-width: 800px) { .sticker__info small { font-size: 18px; } }
-.sticker__info time { font-size: 40px; }
-@media only screen and (max-width: 1024px) { .sticker__info time { font-size: 36px; } }
-@media only screen and (max-width: 800px) { .sticker__info time { font-size: 20px; } }
+.sticker img { width: 100%; }

@@ -1,3 +1,17 @@
+.btn-sound
+	// +svg(no_sound, 34, 28)
+	background: none
+	position: absolute
+	top: 20px
+	right: 20px
+	z-index: 500 
+	&.is-active
+		.no-sound
+			display: none
+
+.js-section	
+	background: url(../img/bg.jpg) center 0 repeat fixed
+
 .video
 	position: absolute
 	top: 0
@@ -210,6 +224,14 @@
 			.main-social
 				visibility: visible
 				opacity: 1
+			.main-share
+				top: 50%
+				visibility: visible
+				opacity: 1
+				&.is-hidden
+					top: 20%
+					opacity: 0
+					visibility: hidden
 
 .nav
 	font-size: 0
@@ -420,6 +442,10 @@
 				-ms-transform: scale(1.2) rotate(3deg) 
 				-o-transform: scale(1.2) rotate(3deg) 
 				transform: scale(1.2) rotate(3deg) 
+			.partner__center
+				i
+					visibility: hidden
+					opacity: 0
 		img
 			position: absolute
 			top: 0
@@ -439,6 +465,7 @@
 		will-change: opacity
 		i
 			display: inline-block
+			+transition(visibility 0.2s, opacity 0.2s)
 			+r2
 				+scale(0.6)
 				margin: -35px 0 0 -47px 
@@ -1071,7 +1098,7 @@
 	height: 2090px
 	margin: 0 auto
 	padding: 580px 10px 0 
-	background: url(../img/instruction-bg.jpg) no-repeat top center 
+	background: url(../img/instruction-bg1.jpg) no-repeat top center 
 	position: relative
 	+r1
 		padding: 430px 8px 0 
@@ -1319,10 +1346,13 @@
 	color: #fff
 	border-radius: 10px
 	position: fixed
-	top: 50%
+	top: 20%
 	right: 20px
 	margin-top: -150px
 	z-index: 300
+	visibility: hidden
+	opacity: 0
+	+transition(all 0.5s ease)
 	+r1
 		display: none
 	p
@@ -1357,10 +1387,6 @@
 	margin: 0 auto 25px
 	width: 477px
 	height: 200px
-	background: url(../img/sticker-bg.png) no-repeat center center
-	-webkit-background-size: contain 
-	-o-background-size: contain 
-	background-size: contain 
 	position: relative
 	+bb
 	color: #fff 
@@ -1375,86 +1401,5 @@
 		width: 240px
 		height: 101px
 		margin-bottom: 25px
-	&:before
-		content: "" 
-		position: absolute
-		top: 50%
-		left: 48px
-		margin-top: -11px
-		width: 21px
-		height: 21px
-		background: #fff
-		border-radius: 50% 
-		+r1
-			width: 18px
-			height: 18px
-			margin-top: -9px
-		+r2
-			width: 10px
-			height: 10px
-			margin-top: -5px
-			left: 24px
-	&__inner
-		display: table
+	img
 		width: 100%
-	&__text, &__info
-		display: table-cell
-		vertical-align: top
-	&__text
-		font-size: 90px
-		text-transform: uppercase
-		line-height: 0.9
-		padding: 20px 0 18px 110px
-		width: 320px
-		+r1
-			padding: 20px 0 18px 95px
-			font-size: 68px
-			width: 260px 
-		+r2
-			width: 160px
-			padding: 10px 0 9px 55px
-			font-size: 45px 
-	&__info
-		text-align: center
-		padding: 11px 0  
-		position: relative
-		+r1
-			padding: 15px 0 
-		+r2
-			padding: 5px 0 
-		&:before
-			position: absolute
-			top: 25px
-			bottom: 30px
-			left: 0
-			width: 4px
-			background: #fff 
-			content: "" 
-			+r1
-				bottom: 25px
-			+r2
-				top: 10px
-				bottom: 10px
-				width: 2px
-		span, small, time
-			display: block
-		span
-			font-size: 100px
-			text-transform: uppercase
-			line-height: 0.9
-			+r1
-				font-size: 70px
-			+r2
-				font-size: 50px
-		small
-			font-size: 35px
-			+r1
-				font-size: 26px
-			+r2
-				font-size: 18px
-		time
-			font-size: 40px
-			+r1
-				font-size: 36px
-			+r2
-				font-size: 20px
