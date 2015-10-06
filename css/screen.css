@@ -224,7 +224,7 @@ a { text-decoration: none; }
 .partner__inner:hover img { -webkit-transform: scale(1.2) rotate(3deg); -moz-transform: scale(1.2) rotate(3deg); -ms-transform: scale(1.2) rotate(3deg); -o-transform: scale(1.2) rotate(3deg); transform: scale(1.2) rotate(3deg); }
 .partner__inner:hover .partner__center i { visibility: hidden; opacity: 0; }
 .partner__inner img { position: absolute; top: 0; left: 0; min-width: 100%; min-height: 100%; -moz-transition: -moz-transform 0.2s ease-out; -o-transition: -o-transform 0.2s ease-out; -webkit-transition: -webkit-transform 0.2s ease-out; transition: transform 0.2s ease-out; will-change: transform; }
-.partner__center { position: absolute; z-index: 2; top: 0; left: 0; bottom: 0; right: 0; opacity: 0; will-change: opacity; }
+.partner__center { position: absolute; z-index: 2; top: 0; left: 0; bottom: 0; right: 0; will-change: opacity; }
 .partner__center i { display: inline-block; -moz-transition: visibility 0.2s, opacity 0.2s; -o-transition: visibility 0.2s, opacity 0.2s; -webkit-transition: visibility 0.2s, opacity 0.2s; transition: visibility 0.2s, opacity 0.2s; }
 @media only screen and (max-width: 800px) { .partner__center i { -ms-transform: scale(0.6); -webkit-transform: scale(0.6); transform: scale(0.6); margin: -35px 0 0 -47px; } }
 .partner__center i.is-dutti { background: url('../img/icons-s0e2697cead.png') 0 -6871px no-repeat; width: 235px; height: 170px; }
