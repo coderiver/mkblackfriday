@@ -1403,3 +1403,86 @@
 		margin-bottom: 25px
 	img
 		width: 100%
+
+//page
+.page
+	padding: 28px 0 135px 
+	+r(768)
+		padding: 28px 0 0 
+	&-header
+		margin: 0 auto 28px
+		max-width: 275px
+		position: relative
+		font-size: 0
+		img
+			width: 100%
+	&-social
+		position: absolute
+		top: 50%
+		left: 100%
+		margin-top: -27px
+		padding: 0 22px 
+		white-space: nowrap
+		+r(768)
+			position: relative
+			top: auto
+			left: auto
+			margin: 0
+			padding: 20px 20px 0 
+			text-align: center
+		li
+			margin: 0 5px 
+			display: inline-block
+			vertical-align: top
+			a
+				display: inline-block
+				&.is-fb
+					+s(page-fb)
+				&.is-vk
+					+s(page-vk)
+				&.is-od
+					+s(page-od)
+	&-main
+		margin: 0 auto
+		max-width: 960px
+	&-banner
+		display: block
+		+vertical
+		padding: 0 30px 
+		height: 300px
+		+cover
+		text-align: left
+		img
+			display: inline-block
+			vertical-align: middle
+			max-width: 90%
+	&-body
+		background: #fff
+		padding: 35px 60px 40px 75px  
+		+r(768)
+			padding: 30px 20px 30px 
+		h4
+			+semi
+			color: #fd3802
+			font-size: 26px
+			line-height: 1
+			margin-bottom: 30px
+		p, li
+			color: black
+			font-size: 16px
+			line-height: 20px
+			margin-bottom: 19px
+		li
+			padding: 0 15px 
+	&-btns
+		text-align: center
+	&-btn
+		color: white
+		font-size: 17px
+		+semi
+		background-color: #fd3802
+		border-radius: 5px
+		padding: 15px 17px 18px
+		line-height: 1
+		display: inline-block
+		vertical-align: top 

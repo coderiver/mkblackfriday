@@ -34,6 +34,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 @font-face { font-family: "BebasNeue Bold"; src: url("fonts/bebasneue_bold.eot"); src: url("fonts/bebasneue_bold.eot?#iefix") format("embedded-opentype"), url("fonts/bebasneue_bold.woff2") format("woff2"), url("fonts/bebasneue_bold.woff") format("woff"), url("fonts/bebasneue_bold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 body { font-family: "OpenSans Regular", Arial, sans-serif; font-size: 18px; line-height: 1.4; }
 @media only screen and (max-width: 800px) { body { font-size: 11px; } }
+body.is-page { background: black; }
 
 h1, h2, h3, h4, h5, h6, b, strong, em, i, td, th { font-style: normal; font-weight: normal; }
 
@@ -150,13 +151,13 @@ a { text-decoration: none; }
 .social li { display: inline-block; vertical-align: top; padding: 1px; }
 @media only screen and (max-width: 800px) { .social li { padding: 0 6px; } }
 .social li a { display: inline-block; }
-.social li a.is-mail { background: url('../img/icons-s0e2697cead.png') 0 -15614px no-repeat; width: 30px; height: 30px; }
+.social li a.is-mail { background: url('../img/icons-s8087c4c0ae.png') 0 -15614px no-repeat; width: 30px; height: 30px; }
 @media only screen and (max-width: 800px) { .social li a.is-mail { width: 18px; height: 18px; background: url(../img/icons/mail.png) no-repeat; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; } }
-.social li a.is-fb { background: url('../img/icons-s0e2697cead.png') 0 -8702px no-repeat; width: 30px; height: 30px; }
+.social li a.is-fb { background: url('../img/icons-s8087c4c0ae.png') 0 -8702px no-repeat; width: 30px; height: 30px; }
 @media only screen and (max-width: 800px) { .social li a.is-fb { width: 18px; height: 18px; background: url(../img/icons/fb.png) no-repeat; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; } }
-.social li a.is-gp { background: url('../img/icons-s0e2697cead.png') 0 -10182px no-repeat; width: 30px; height: 30px; }
+.social li a.is-gp { background: url('../img/icons-s8087c4c0ae.png') 0 -10182px no-repeat; width: 30px; height: 30px; }
 @media only screen and (max-width: 800px) { .social li a.is-gp { width: 18px; height: 18px; background: url(../img/icons/gp.png) no-repeat; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; } }
-.social li a.is-vk { background: url('../img/icons-s0e2697cead.png') 0 -28497px no-repeat; width: 30px; height: 30px; }
+.social li a.is-vk { background: url('../img/icons-s8087c4c0ae.png') 0 -28689px no-repeat; width: 30px; height: 30px; }
 @media only screen and (max-width: 800px) { .social li a.is-vk { width: 18px; height: 18px; background: url(../img/icons/vk.png) no-repeat; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; } }
 
 @media only screen and (max-width: 800px) { .header { min-height: 0 !important; } }
@@ -227,166 +228,166 @@ a { text-decoration: none; }
 .partner__center { position: absolute; z-index: 2; top: 0; left: 0; bottom: 0; right: 0; will-change: opacity; }
 .partner__center i { display: inline-block; -moz-transition: visibility 0.2s, opacity 0.2s; -o-transition: visibility 0.2s, opacity 0.2s; -webkit-transition: visibility 0.2s, opacity 0.2s; transition: visibility 0.2s, opacity 0.2s; }
 @media only screen and (max-width: 800px) { .partner__center i { -ms-transform: scale(0.6); -webkit-transform: scale(0.6); transform: scale(0.6); margin: -35px 0 0 -47px; } }
-.partner__center i.is-dutti { background: url('../img/icons-s0e2697cead.png') 0 -6871px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-stradivarius { background: url('../img/icons-s0e2697cead.png') 0 -24506px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-adidas { background: url('../img/icons-s0e2697cead.png') 0 -360px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-lenne { background: url('../img/icons-s0e2697cead.png') 0 -13897px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-zara { background: url('../img/icons-s0e2697cead.png') 0 -29077px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-oysho { background: url('../img/icons-s0e2697cead.png') 0 -18565px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-puma { background: url('../img/icons-s0e2697cead.png') 0 -21265px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-bershka { background: url('../img/icons-s0e2697cead.png') 0 -2160px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-nike { background: url('../img/icons-s0e2697cead.png') 0 -17814px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-arena { background: url('../img/icons-s0e2697cead.png') 0 -1440px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-pb { background: url('../img/icons-s0e2697cead.png') 0 -19105px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-reebok { background: url('../img/icons-s0e2697cead.png') 0 -21985px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-secret { background: url('../img/icons-s0e2697cead.png') 0 -23785px no-repeat; width: 235px; height: 171px; }
-.partner__center i.is-ugg { background: url('../img/icons-s0e2697cead.png') 0 -26846px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-carlo { background: url('../img/icons-s0e2697cead.png') 0 -3780px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-nb { background: url('../img/icons-s0e2697cead.png') 0 -17634px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-piazza { background: url('../img/icons-s0e2697cead.png') 0 -19825px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-chicco { background: url('../img/icons-s0e2697cead.png') 0 -4321px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-timberland { background: url('../img/icons-s0e2697cead.png') 0 -25766px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-tommy { background: url('../img/icons-s0e2697cead.png') 0 -26306px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-abercrombie { background: url('../img/icons-s0e2697cead.png') 0 0 no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-sassofono { background: url('../img/icons-s0e2697cead.png') 0 -23065px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-intertop { background: url('../img/icons-s0e2697cead.png') 0 -10837px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-walker { background: url('../img/icons-s0e2697cead.png') 0 -28717px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-loreal { background: url('../img/icons-s0e2697cead.png') 0 -14797px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-iren { background: url('../img/icons-s0e2697cead.png') 0 -11197px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-tan { background: url('../img/icons-s0e2697cead.png') 0 -25406px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-milavitsa { background: url('../img/icons-s0e2697cead.png') 0 -16374px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-crocs { background: url('../img/icons-s0e2697cead.png') 0 -5611px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-collumbia { background: url('../img/icons-s0e2697cead.png') 0 -4711px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-merrell { background: url('../img/icons-s0e2697cead.png') 0 -16194px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-cat { background: url('../img/icons-s0e2697cead.png') 0 -3960px no-repeat; width: 235px; height: 171px; }
-.partner__center i.is-tally { background: url('../img/icons-s0e2697cead.png') 0 -25046px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-marks { background: url('../img/icons-s0e2697cead.png') 0 -15834px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-diesel { background: url('../img/icons-s0e2697cead.png') 0 -6331px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-lupilu { background: url('../img/icons-s0e2697cead.png') 0 -15157px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-naturino { background: url('../img/icons-s0e2697cead.png') 0 -17454px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-blizzarini { background: url('../img/icons-s0e2697cead.png') 0 -2700px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-liu { background: url('../img/icons-s0e2697cead.png') 0 -14617px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-emporio { background: url('../img/icons-s0e2697cead.png') 0 -7591px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-guess { background: url('../img/icons-s0e2697cead.png') 0 -10222px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-red { background: url('../img/icons-s0e2697cead.png') 0 -21625px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-giorgio { background: url('../img/icons-s0e2697cead.png') 0 -9822px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-krisstel { background: url('../img/icons-s0e2697cead.png') 0 -13177px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-lb { background: url('../img/icons-s0e2697cead.png') 0 -13357px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-bgl { background: url('../img/icons-s0e2697cead.png') 0 -2340px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-arber { background: url('../img/icons-s0e2697cead.png') 0 -1260px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-icepeak { background: url('../img/icons-s0e2697cead.png') 0 -10657px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-oodji { background: url('../img/icons-s0e2697cead.png') 0 -18205px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-savage { background: url('../img/icons-s0e2697cead.png') 0 -23425px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-waggon { background: url('../img/icons-s0e2697cead.png') 0 -28537px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-plato { background: url('../img/icons-s0e2697cead.png') 0 -20005px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-blackstone { background: url('../img/icons-s0e2697cead.png') 0 -2520px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-vanzetti { background: url('../img/icons-s0e2697cead.png') 0 -27746px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-other { background: url('../img/icons-s0e2697cead.png') 0 -18385px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-cos { background: url('../img/icons-s0e2697cead.png') 0 -5251px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-bulgari { background: url('../img/icons-s0e2697cead.png') 0 -3240px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-versace { background: url('../img/icons-s0e2697cead.png') 0 -28106px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-levoni { background: url('../img/icons-s0e2697cead.png') 0 -14437px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-sauconi { background: url('../img/icons-s0e2697cead.png') 0 -23245px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-rieker { background: url('../img/icons-s0e2697cead.png') 0 -22345px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-respect { background: url('../img/icons-s0e2697cead.png') 0 -22165px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-erke { background: url('../img/icons-s0e2697cead.png') 0 -7951px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-tamaris { background: url('../img/icons-s0e2697cead.png') 0 -25226px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-miss { background: url('../img/icons-s0e2697cead.png') 0 -16554px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-madoc { background: url('../img/icons-s0e2697cead.png') 0 -15434px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-leather { background: url('../img/icons-s0e2697cead.png') 0 -13537px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-julia { background: url('../img/icons-s0e2697cead.png') 0 -12097px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-luminarc { background: url('../img/icons-s0e2697cead.png') 0 -14977px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-berghoff { background: url('../img/icons-s0e2697cead.png') 0 -1980px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-raslov { background: url('../img/icons-s0e2697cead.png') 0 -21445px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-valery { background: url('../img/icons-s0e2697cead.png') 0 -27386px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-jhiva { background: url('../img/icons-s0e2697cead.png') 0 -11737px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-mustang { background: url('../img/icons-s0e2697cead.png') 0 -17274px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-primal { background: url('../img/icons-s0e2697cead.png') 0 -20545px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-princess { background: url('../img/icons-s0e2697cead.png') 0 -20905px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-jadea { background: url('../img/icons-s0e2697cead.png') 0 -11557px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-intimissim { background: url('../img/icons-s0e2697cead.png') 0 -11017px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-vdone { background: url('../img/icons-s0e2697cead.png') 0 -27926px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-levis { background: url('../img/icons-s0e2697cead.png') 0 -14257px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-diva { background: url('../img/icons-s0e2697cead.png') 0 -6511px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-keddo { background: url('../img/icons-s0e2697cead.png') 0 -12637px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-devision { background: url('../img/icons-s0e2697cead.png') 0 -5971px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-karree { background: url('../img/icons-s0e2697cead.png') 0 -12457px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-franchi { background: url('../img/icons-s0e2697cead.png') 0 -9102px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-polaroid { background: url('../img/icons-s0e2697cead.png') 0 -20185px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-george { background: url('../img/icons-s0e2697cead.png') 0 -9462px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-mtf { background: url('../img/icons-s0e2697cead.png') 0 -17094px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-sebastiano { background: url('../img/icons-s0e2697cead.png') 0 -23605px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-undo { background: url('../img/icons-s0e2697cead.png') 0 -27206px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-palvira { background: url('../img/icons-s0e2697cead.png') 0 -18745px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-promin { background: url('../img/icons-s0e2697cead.png') 0 -21085px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-missoni { background: url('../img/icons-s0e2697cead.png') 0 -16734px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-eze { background: url('../img/icons-s0e2697cead.png') 0 -8131px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-elmira { background: url('../img/icons-s0e2697cead.png') 0 -7231px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-philippe { background: url('../img/icons-s0e2697cead.png') 0 -19465px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-kilah { background: url('../img/icons-s0e2697cead.png') 0 -12997px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-rina { background: url('../img/icons-s0e2697cead.png') 0 -22525px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-ruta { background: url('../img/icons-s0e2697cead.png') 0 -22705px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-issa { background: url('../img/icons-s0e2697cead.png') 0 -11377px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-energie { background: url('../img/icons-s0e2697cead.png') 0 -7771px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-homeline { background: url('../img/icons-s0e2697cead.png') 0 -10477px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-chasovnikova { background: url('../img/icons-s0e2697cead.png') 0 -4141px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-time { background: url('../img/icons-s0e2697cead.png') 0 -25946px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-timex { background: url('../img/icons-s0e2697cead.png') 0 -26126px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-eleonora { background: url('../img/icons-s0e2697cead.png') 0 -7051px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-angel { background: url('../img/icons-s0e2697cead.png') 0 -1080px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-tony { background: url('../img/icons-s0e2697cead.png') 0 -26486px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-calzedonia { background: url('../img/icons-s0e2697cead.png') 0 -3420px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-fabio { background: url('../img/icons-s0e2697cead.png') 0 -8311px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-florens { background: url('../img/icons-s0e2697cead.png') 0 -8922px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-fifi { background: url('../img/icons-s0e2697cead.png') 0 -8742px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-arizona { background: url('../img/icons-s0e2697cead.png') 0 -1620px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-berenis { background: url('../img/icons-s0e2697cead.png') 0 -1800px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-gatta { background: url('../img/icons-s0e2697cead.png') 0 -9282px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-divers { background: url('../img/icons-s0e2697cead.png') 0 -6691px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-joseph { background: url('../img/icons-s0e2697cead.png') 0 -11917px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-lemon { background: url('../img/icons-s0e2697cead.png') 0 -13717px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-levante { background: url('../img/icons-s0e2697cead.png') 0 -14077px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-prime { background: url('../img/icons-s0e2697cead.png') 0 -20725px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-cmc { background: url('../img/icons-s0e2697cead.png') 0 -4501px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-majaly { background: url('../img/icons-s0e2697cead.png') 0 -15654px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-giulia { background: url('../img/icons-s0e2697cead.png') 0 -10002px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-broni { background: url('../img/icons-s0e2697cead.png') 0 -3060px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-delfin { background: url('../img/icons-s0e2697cead.png') 0 -5791px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-conte { background: url('../img/icons-s0e2697cead.png') 0 -4891px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-selio { background: url('../img/icons-s0e2697cead.png') 0 -23966px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-just { background: url('../img/icons-s0e2697cead.png') 0 -12277px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-redmond { background: url('../img/icons-s0e2697cead.png') 0 -21805px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-acer { background: url('../img/icons-s0e2697cead.png') 0 -180px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-ample { background: url('../img/icons-s0e2697cead.png') 0 -900px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-marmot { background: url('../img/icons-s0e2697cead.png') 0 -16014px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-kenwood { background: url('../img/icons-s0e2697cead.png') 0 -12817px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-philips { background: url('../img/icons-s0e2697cead.png') 0 -19645px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-windrose { background: url('../img/icons-s0e2697cead.png') 0 -28897px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-umbro { background: url('../img/icons-s0e2697cead.png') 0 -27026px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-braun { background: url('../img/icons-s0e2697cead.png') 0 -2880px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-nikon { background: url('../img/icons-s0e2697cead.png') 0 -17994px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-craft { background: url('../img/icons-s0e2697cead.png') 0 -5431px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-speedo { background: url('../img/icons-s0e2697cead.png') 0 -24146px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-panasonic { background: url('../img/icons-s0e2697cead.png') 0 -18925px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-elpaso { background: url('../img/icons-s0e2697cead.png') 0 -7411px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-face { background: url('../img/icons-s0e2697cead.png') 0 -8491px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-alian { background: url('../img/icons-s0e2697cead.png') 0 -720px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-moda { background: url('../img/icons-s0e2697cead.png') 0 -16914px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-svetski { background: url('../img/icons-s0e2697cead.png') 0 -24686px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-tempish { background: url('../img/icons-s0e2697cead.png') 0 -25586px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-salomon { background: url('../img/icons-s0e2697cead.png') 0 -22885px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-virginia { background: url('../img/icons-s0e2697cead.png') 0 -28286px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-trixie { background: url('../img/icons-s0e2697cead.png') 0 -26666px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-diadora { background: url('../img/icons-s0e2697cead.png') 0 -6151px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-sperry { background: url('../img/icons-s0e2697cead.png') 0 -24326px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-premier { background: url('../img/icons-s0e2697cead.png') 0 -20365px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-gimborn { background: url('../img/icons-s0e2697cead.png') 0 -9642px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-caprice { background: url('../img/icons-s0e2697cead.png') 0 -3600px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-vans { background: url('../img/icons-s0e2697cead.png') 0 -27566px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-alba { background: url('../img/icons-s0e2697cead.png') 0 -540px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-petfusion { background: url('../img/icons-s0e2697cead.png') 0 -19285px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-converse { background: url('../img/icons-s0e2697cead.png') 0 -5071px no-repeat; width: 235px; height: 170px; }
-.partner__center i.is-sweden { background: url('../img/icons-s0e2697cead.png') 0 -24866px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-dutti { background: url('../img/icons-s8087c4c0ae.png') 0 -6871px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-stradivarius { background: url('../img/icons-s8087c4c0ae.png') 0 -24698px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-adidas { background: url('../img/icons-s8087c4c0ae.png') 0 -360px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-lenne { background: url('../img/icons-s8087c4c0ae.png') 0 -13897px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-zara { background: url('../img/icons-s8087c4c0ae.png') 0 -29269px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-oysho { background: url('../img/icons-s8087c4c0ae.png') 0 -18565px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-puma { background: url('../img/icons-s8087c4c0ae.png') 0 -21457px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-bershka { background: url('../img/icons-s8087c4c0ae.png') 0 -2160px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-nike { background: url('../img/icons-s8087c4c0ae.png') 0 -17814px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-arena { background: url('../img/icons-s8087c4c0ae.png') 0 -1440px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-pb { background: url('../img/icons-s8087c4c0ae.png') 0 -19297px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-reebok { background: url('../img/icons-s8087c4c0ae.png') 0 -22177px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-secret { background: url('../img/icons-s8087c4c0ae.png') 0 -23977px no-repeat; width: 235px; height: 171px; }
+.partner__center i.is-ugg { background: url('../img/icons-s8087c4c0ae.png') 0 -27038px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-carlo { background: url('../img/icons-s8087c4c0ae.png') 0 -3780px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-nb { background: url('../img/icons-s8087c4c0ae.png') 0 -17634px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-piazza { background: url('../img/icons-s8087c4c0ae.png') 0 -20017px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-chicco { background: url('../img/icons-s8087c4c0ae.png') 0 -4321px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-timberland { background: url('../img/icons-s8087c4c0ae.png') 0 -25958px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-tommy { background: url('../img/icons-s8087c4c0ae.png') 0 -26498px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-abercrombie { background: url('../img/icons-s8087c4c0ae.png') 0 0 no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-sassofono { background: url('../img/icons-s8087c4c0ae.png') 0 -23257px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-intertop { background: url('../img/icons-s8087c4c0ae.png') 0 -10837px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-walker { background: url('../img/icons-s8087c4c0ae.png') 0 -28909px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-loreal { background: url('../img/icons-s8087c4c0ae.png') 0 -14797px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-iren { background: url('../img/icons-s8087c4c0ae.png') 0 -11197px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-tan { background: url('../img/icons-s8087c4c0ae.png') 0 -25598px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-milavitsa { background: url('../img/icons-s8087c4c0ae.png') 0 -16374px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-crocs { background: url('../img/icons-s8087c4c0ae.png') 0 -5611px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-collumbia { background: url('../img/icons-s8087c4c0ae.png') 0 -4711px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-merrell { background: url('../img/icons-s8087c4c0ae.png') 0 -16194px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-cat { background: url('../img/icons-s8087c4c0ae.png') 0 -3960px no-repeat; width: 235px; height: 171px; }
+.partner__center i.is-tally { background: url('../img/icons-s8087c4c0ae.png') 0 -25238px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-marks { background: url('../img/icons-s8087c4c0ae.png') 0 -15834px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-diesel { background: url('../img/icons-s8087c4c0ae.png') 0 -6331px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-lupilu { background: url('../img/icons-s8087c4c0ae.png') 0 -15157px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-naturino { background: url('../img/icons-s8087c4c0ae.png') 0 -17454px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-blizzarini { background: url('../img/icons-s8087c4c0ae.png') 0 -2700px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-liu { background: url('../img/icons-s8087c4c0ae.png') 0 -14617px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-emporio { background: url('../img/icons-s8087c4c0ae.png') 0 -7591px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-guess { background: url('../img/icons-s8087c4c0ae.png') 0 -10222px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-red { background: url('../img/icons-s8087c4c0ae.png') 0 -21817px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-giorgio { background: url('../img/icons-s8087c4c0ae.png') 0 -9822px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-krisstel { background: url('../img/icons-s8087c4c0ae.png') 0 -13177px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-lb { background: url('../img/icons-s8087c4c0ae.png') 0 -13357px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-bgl { background: url('../img/icons-s8087c4c0ae.png') 0 -2340px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-arber { background: url('../img/icons-s8087c4c0ae.png') 0 -1260px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-icepeak { background: url('../img/icons-s8087c4c0ae.png') 0 -10657px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-oodji { background: url('../img/icons-s8087c4c0ae.png') 0 -18205px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-savage { background: url('../img/icons-s8087c4c0ae.png') 0 -23617px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-waggon { background: url('../img/icons-s8087c4c0ae.png') 0 -28729px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-plato { background: url('../img/icons-s8087c4c0ae.png') 0 -20197px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-blackstone { background: url('../img/icons-s8087c4c0ae.png') 0 -2520px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-vanzetti { background: url('../img/icons-s8087c4c0ae.png') 0 -27938px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-other { background: url('../img/icons-s8087c4c0ae.png') 0 -18385px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-cos { background: url('../img/icons-s8087c4c0ae.png') 0 -5251px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-bulgari { background: url('../img/icons-s8087c4c0ae.png') 0 -3240px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-versace { background: url('../img/icons-s8087c4c0ae.png') 0 -28298px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-levoni { background: url('../img/icons-s8087c4c0ae.png') 0 -14437px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-sauconi { background: url('../img/icons-s8087c4c0ae.png') 0 -23437px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-rieker { background: url('../img/icons-s8087c4c0ae.png') 0 -22537px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-respect { background: url('../img/icons-s8087c4c0ae.png') 0 -22357px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-erke { background: url('../img/icons-s8087c4c0ae.png') 0 -7951px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-tamaris { background: url('../img/icons-s8087c4c0ae.png') 0 -25418px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-miss { background: url('../img/icons-s8087c4c0ae.png') 0 -16554px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-madoc { background: url('../img/icons-s8087c4c0ae.png') 0 -15434px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-leather { background: url('../img/icons-s8087c4c0ae.png') 0 -13537px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-julia { background: url('../img/icons-s8087c4c0ae.png') 0 -12097px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-luminarc { background: url('../img/icons-s8087c4c0ae.png') 0 -14977px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-berghoff { background: url('../img/icons-s8087c4c0ae.png') 0 -1980px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-raslov { background: url('../img/icons-s8087c4c0ae.png') 0 -21637px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-valery { background: url('../img/icons-s8087c4c0ae.png') 0 -27578px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-jhiva { background: url('../img/icons-s8087c4c0ae.png') 0 -11737px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-mustang { background: url('../img/icons-s8087c4c0ae.png') 0 -17274px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-primal { background: url('../img/icons-s8087c4c0ae.png') 0 -20737px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-princess { background: url('../img/icons-s8087c4c0ae.png') 0 -21097px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-jadea { background: url('../img/icons-s8087c4c0ae.png') 0 -11557px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-intimissim { background: url('../img/icons-s8087c4c0ae.png') 0 -11017px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-vdone { background: url('../img/icons-s8087c4c0ae.png') 0 -28118px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-levis { background: url('../img/icons-s8087c4c0ae.png') 0 -14257px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-diva { background: url('../img/icons-s8087c4c0ae.png') 0 -6511px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-keddo { background: url('../img/icons-s8087c4c0ae.png') 0 -12637px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-devision { background: url('../img/icons-s8087c4c0ae.png') 0 -5971px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-karree { background: url('../img/icons-s8087c4c0ae.png') 0 -12457px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-franchi { background: url('../img/icons-s8087c4c0ae.png') 0 -9102px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-polaroid { background: url('../img/icons-s8087c4c0ae.png') 0 -20377px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-george { background: url('../img/icons-s8087c4c0ae.png') 0 -9462px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-mtf { background: url('../img/icons-s8087c4c0ae.png') 0 -17094px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-sebastiano { background: url('../img/icons-s8087c4c0ae.png') 0 -23797px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-undo { background: url('../img/icons-s8087c4c0ae.png') 0 -27398px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-palvira { background: url('../img/icons-s8087c4c0ae.png') 0 -18937px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-promin { background: url('../img/icons-s8087c4c0ae.png') 0 -21277px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-missoni { background: url('../img/icons-s8087c4c0ae.png') 0 -16734px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-eze { background: url('../img/icons-s8087c4c0ae.png') 0 -8131px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-elmira { background: url('../img/icons-s8087c4c0ae.png') 0 -7231px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-philippe { background: url('../img/icons-s8087c4c0ae.png') 0 -19657px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-kilah { background: url('../img/icons-s8087c4c0ae.png') 0 -12997px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-rina { background: url('../img/icons-s8087c4c0ae.png') 0 -22717px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-ruta { background: url('../img/icons-s8087c4c0ae.png') 0 -22897px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-issa { background: url('../img/icons-s8087c4c0ae.png') 0 -11377px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-energie { background: url('../img/icons-s8087c4c0ae.png') 0 -7771px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-homeline { background: url('../img/icons-s8087c4c0ae.png') 0 -10477px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-chasovnikova { background: url('../img/icons-s8087c4c0ae.png') 0 -4141px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-time { background: url('../img/icons-s8087c4c0ae.png') 0 -26138px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-timex { background: url('../img/icons-s8087c4c0ae.png') 0 -26318px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-eleonora { background: url('../img/icons-s8087c4c0ae.png') 0 -7051px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-angel { background: url('../img/icons-s8087c4c0ae.png') 0 -1080px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-tony { background: url('../img/icons-s8087c4c0ae.png') 0 -26678px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-calzedonia { background: url('../img/icons-s8087c4c0ae.png') 0 -3420px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-fabio { background: url('../img/icons-s8087c4c0ae.png') 0 -8311px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-florens { background: url('../img/icons-s8087c4c0ae.png') 0 -8922px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-fifi { background: url('../img/icons-s8087c4c0ae.png') 0 -8742px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-arizona { background: url('../img/icons-s8087c4c0ae.png') 0 -1620px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-berenis { background: url('../img/icons-s8087c4c0ae.png') 0 -1800px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-gatta { background: url('../img/icons-s8087c4c0ae.png') 0 -9282px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-divers { background: url('../img/icons-s8087c4c0ae.png') 0 -6691px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-joseph { background: url('../img/icons-s8087c4c0ae.png') 0 -11917px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-lemon { background: url('../img/icons-s8087c4c0ae.png') 0 -13717px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-levante { background: url('../img/icons-s8087c4c0ae.png') 0 -14077px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-prime { background: url('../img/icons-s8087c4c0ae.png') 0 -20917px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-cmc { background: url('../img/icons-s8087c4c0ae.png') 0 -4501px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-majaly { background: url('../img/icons-s8087c4c0ae.png') 0 -15654px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-giulia { background: url('../img/icons-s8087c4c0ae.png') 0 -10002px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-broni { background: url('../img/icons-s8087c4c0ae.png') 0 -3060px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-delfin { background: url('../img/icons-s8087c4c0ae.png') 0 -5791px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-conte { background: url('../img/icons-s8087c4c0ae.png') 0 -4891px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-selio { background: url('../img/icons-s8087c4c0ae.png') 0 -24158px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-just { background: url('../img/icons-s8087c4c0ae.png') 0 -12277px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-redmond { background: url('../img/icons-s8087c4c0ae.png') 0 -21997px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-acer { background: url('../img/icons-s8087c4c0ae.png') 0 -180px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-ample { background: url('../img/icons-s8087c4c0ae.png') 0 -900px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-marmot { background: url('../img/icons-s8087c4c0ae.png') 0 -16014px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-kenwood { background: url('../img/icons-s8087c4c0ae.png') 0 -12817px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-philips { background: url('../img/icons-s8087c4c0ae.png') 0 -19837px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-windrose { background: url('../img/icons-s8087c4c0ae.png') 0 -29089px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-umbro { background: url('../img/icons-s8087c4c0ae.png') 0 -27218px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-braun { background: url('../img/icons-s8087c4c0ae.png') 0 -2880px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-nikon { background: url('../img/icons-s8087c4c0ae.png') 0 -17994px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-craft { background: url('../img/icons-s8087c4c0ae.png') 0 -5431px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-speedo { background: url('../img/icons-s8087c4c0ae.png') 0 -24338px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-panasonic { background: url('../img/icons-s8087c4c0ae.png') 0 -19117px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-elpaso { background: url('../img/icons-s8087c4c0ae.png') 0 -7411px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-face { background: url('../img/icons-s8087c4c0ae.png') 0 -8491px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-alian { background: url('../img/icons-s8087c4c0ae.png') 0 -720px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-moda { background: url('../img/icons-s8087c4c0ae.png') 0 -16914px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-svetski { background: url('../img/icons-s8087c4c0ae.png') 0 -24878px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-tempish { background: url('../img/icons-s8087c4c0ae.png') 0 -25778px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-salomon { background: url('../img/icons-s8087c4c0ae.png') 0 -23077px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-virginia { background: url('../img/icons-s8087c4c0ae.png') 0 -28478px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-trixie { background: url('../img/icons-s8087c4c0ae.png') 0 -26858px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-diadora { background: url('../img/icons-s8087c4c0ae.png') 0 -6151px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-sperry { background: url('../img/icons-s8087c4c0ae.png') 0 -24518px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-premier { background: url('../img/icons-s8087c4c0ae.png') 0 -20557px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-gimborn { background: url('../img/icons-s8087c4c0ae.png') 0 -9642px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-caprice { background: url('../img/icons-s8087c4c0ae.png') 0 -3600px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-vans { background: url('../img/icons-s8087c4c0ae.png') 0 -27758px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-alba { background: url('../img/icons-s8087c4c0ae.png') 0 -540px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-petfusion { background: url('../img/icons-s8087c4c0ae.png') 0 -19477px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-converse { background: url('../img/icons-s8087c4c0ae.png') 0 -5071px no-repeat; width: 235px; height: 170px; }
+.partner__center i.is-sweden { background: url('../img/icons-s8087c4c0ae.png') 0 -25058px no-repeat; width: 235px; height: 170px; }
 
 .brends .inner { padding: 0 100px 100px; }
 @media only screen and (max-width: 1024px) { .brends .inner { padding: 0 32px 55px; } }
@@ -529,8 +530,8 @@ a { text-decoration: none; }
 @media only screen and (max-width: 1024px) { .step small { font-size: 11px; margin-bottom: 12px; } }
 .step small.is-main { padding: 0 27px; }
 @media only screen and (max-width: 1024px) { .step small.is-main { padding: 0 18px; } }
-.step small.is-main:before { content: ""; position: absolute; top: 50%; left: 0; background: url('../img/icons-s0e2697cead.png') 0 -10436px no-repeat; width: 17px; height: 31px; margin-top: -19px; }
-@media only screen and (max-width: 1024px) { .step small.is-main:before { background: url('../img/icons-s0e2697cead.png') 0 -10402px no-repeat; width: 13px; height: 24px; margin-top: -15px; } }
+.step small.is-main:before { content: ""; position: absolute; top: 50%; left: 0; background: url('../img/icons-s8087c4c0ae.png') 0 -10436px no-repeat; width: 17px; height: 31px; margin-top: -19px; }
+@media only screen and (max-width: 1024px) { .step small.is-main:before { background: url('../img/icons-s8087c4c0ae.png') 0 -10402px no-repeat; width: 13px; height: 24px; margin-top: -15px; } }
 .step p { font-size: 15px; }
 @media only screen and (max-width: 1024px) { .step p { font-size: 11px; } }
 
@@ -560,14 +561,14 @@ a { text-decoration: none; }
 @media only screen and (max-width: 1024px) { .main-social a { width: 40px; height: 42px; } }
 .main-social a.is-fb { border-radius: 5px 5px 0 0; }
 @media only screen and (max-width: 1024px) { .main-social a.is-fb { border-radius: 5px 0 0 5px; } }
-@media only screen and (max-width: 800px) { .main-social a.is-fb { border-radius: 0; background: url('../img/icons-s0e2697cead.png') 0 -8671px no-repeat; width: 21px; height: 21px; } }
-.main-social a.is-fb:before { background: url('../img/icons-s0e2697cead.png') 0 -15337px no-repeat; width: 12px; height: 23px; margin: -12px 0 0 -6px; }
-.main-social a.is-vk:before { background: url('../img/icons-s0e2697cead.png') 0 -15403px no-repeat; width: 29px; height: 21px; margin: -9px 0 0 -15px; }
-@media only screen and (max-width: 800px) { .main-social a.is-vk { background: url('../img/icons-s0e2697cead.png') 0 -28466px no-repeat; width: 21px; height: 21px; } }
+@media only screen and (max-width: 800px) { .main-social a.is-fb { border-radius: 0; background: url('../img/icons-s8087c4c0ae.png') 0 -8671px no-repeat; width: 21px; height: 21px; } }
+.main-social a.is-fb:before { background: url('../img/icons-s8087c4c0ae.png') 0 -15337px no-repeat; width: 12px; height: 23px; margin: -12px 0 0 -6px; }
+.main-social a.is-vk:before { background: url('../img/icons-s8087c4c0ae.png') 0 -15403px no-repeat; width: 29px; height: 21px; margin: -9px 0 0 -15px; }
+@media only screen and (max-width: 800px) { .main-social a.is-vk { background: url('../img/icons-s8087c4c0ae.png') 0 -28658px no-repeat; width: 21px; height: 21px; } }
 .main-social a.is-od { border-radius: 0 0 5px 5px; }
 @media only screen and (max-width: 1024px) { .main-social a.is-od { border-radius: 0 5px 5px 0; } }
-@media only screen and (max-width: 800px) { .main-social a.is-od { border-radius: 0; background: url('../img/icons-s0e2697cead.png') 0 -18174px no-repeat; width: 21px; height: 21px; } }
-.main-social a.is-od:before { background: url('../img/icons-s0e2697cead.png') 0 -15370px no-repeat; width: 14px; height: 23px; margin: -12px 0 0 -7px; }
+@media only screen and (max-width: 800px) { .main-social a.is-od { border-radius: 0; background: url('../img/icons-s8087c4c0ae.png') 0 -18174px no-repeat; width: 21px; height: 21px; } }
+.main-social a.is-od:before { background: url('../img/icons-s8087c4c0ae.png') 0 -15370px no-repeat; width: 14px; height: 23px; margin: -12px 0 0 -7px; }
 .main-social a:before { position: absolute; top: 50%; left: 50%; content: ""; }
 @media only screen and (max-width: 800px) { .main-social a:before { display: none; } }
 
@@ -589,3 +590,26 @@ a { text-decoration: none; }
 @media only screen and (max-width: 1024px) { .sticker { width: 389px; height: 164px; margin-bottom: 50px; } }
 @media only screen and (max-width: 800px) { .sticker { width: 240px; height: 101px; margin-bottom: 25px; } }
 .sticker img { width: 100%; }
+
+.page { padding: 28px 0 135px; }
+@media only screen and (max-width: 768px) { .page { padding: 28px 0 0; } }
+.page-header { margin: 0 auto 28px; max-width: 275px; position: relative; font-size: 0; }
+.page-header img { width: 100%; }
+.page-social { position: absolute; top: 50%; left: 100%; margin-top: -27px; padding: 0 22px; white-space: nowrap; }
+@media only screen and (max-width: 768px) { .page-social { position: relative; top: auto; left: auto; margin: 0; padding: 20px 20px 0; text-align: center; } }
+.page-social li { margin: 0 5px; display: inline-block; vertical-align: top; }
+.page-social li a { display: inline-block; }
+.page-social li a.is-fb { background: url('../img/icons-s8087c4c0ae.png') 0 -18745px no-repeat; width: 54px; height: 54px; }
+.page-social li a.is-vk { background: url('../img/icons-s8087c4c0ae.png') 0 -18873px no-repeat; width: 54px; height: 54px; }
+.page-social li a.is-od { background: url('../img/icons-s8087c4c0ae.png') 0 -18809px no-repeat; width: 54px; height: 54px; }
+.page-main { margin: 0 auto; max-width: 960px; }
+.page-banner { display: block; text-align: center; font-size: 0; padding: 0 30px; height: 300px; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; text-align: left; }
+.page-banner:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
+.page-banner img { display: inline-block; vertical-align: middle; max-width: 90%; }
+.page-body { background: white; padding: 35px 60px 40px 75px; }
+@media only screen and (max-width: 768px) { .page-body { padding: 30px 20px 30px; } }
+.page-body h4 { font-family: "OpenSans Semibold", Arial, sans-serif; color: #fd3802; font-size: 26px; line-height: 1; margin-bottom: 30px; }
+.page-body p, .page-body li { color: black; font-size: 16px; line-height: 20px; margin-bottom: 19px; }
+.page-body li { padding: 0 15px; }
+.page-btns { text-align: center; }
+.page-btn { color: white; font-size: 17px; font-family: "OpenSans Semibold", Arial, sans-serif; background-color: #fd3802; border-radius: 5px; padding: 15px 17px 18px; line-height: 1; display: inline-block; vertical-align: top; }
